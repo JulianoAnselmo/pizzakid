@@ -1,0 +1,149 @@
+═══════════════════════════════════════════════════════════════════════════════
+                         LAYOUT DO CARDÁPIO - NOVO
+═══════════════════════════════════════════════════════════════════════════════
+
+DESKTOP VIEW (1200px+)
+─────────────────────────────────────────────────────────────────────────────
+
+                        ┌─── CARDÁPIO DIGITAL ───┐
+                        Cardápio enxuto, escolhas claras, 
+                        fome que não nega.
+
+                    [PIZZAS SALGADAS] [PIZZAS DOCES]
+                    [BATATAS] [ESFIHAS] [BEBIDAS]
+                    [COMBOS] [RODIZIO]
+
+    CLASSICAS IRRESISTIVEIS
+    ═════════════════════════════════════════════════════════════════
+
+    ┌──────────────────────────────────────┬──────────────────────────────────────┐
+    │ Calabresa Especial          R$ 52,90 │ Portuguesa Pizza Kid         R$ 57,90 │
+    │ Molho artesanal, muzzarela de        │ Muzzarela cremosa, presunto, ovos     │
+    │ qualidade, calabresa selecionada,    │ frescos, cebola, pimentao, ervilha.   │
+    │ cebola, oregano e azeitonas pretas.  │ A combinacao que todos conhecem...    │
+    │ [Mais pedido]                        │                                      │
+    ├──────────────────────────────────────┼──────────────────────────────────────┤
+    │ Frango com Catupiry         R$ 59,90 │ Quatro Queijos              R$ 61,90 │
+    │ Frango desfiado temperado na manteiga│ Muzzarela, provolone,               │
+    │ catupiry derretido e fio de          │ parmesao ralado e catupiry cremoso. │
+    │ parmesao. Finalizacao cremosa...     │ Para quem não resiste a queijo.    │
+    │ [Destaque da casa]                   │                                     │
+    └──────────────────────────────────────┴──────────────────────────────────────┘
+
+    ┌──────────────────────────────────────┬──────────────────────────────────────┐
+    │ Pepperoni Crocante          R$ 62,90 │ Bacon e Cebola Roxa         R$ 60,90 │
+    │ Molho artesanal, muzzarela,          │ Muzzarela, bacon defumado ate       │
+    │ pepperoni em rodelas que ficam       │ ficar crocante, cebola roxa...      │
+    │ crocantes no forno, toque de oregano │                                    │
+    │ [Novo]                               │                                    │
+    └──────────────────────────────────────┴──────────────────────────────────────┘
+
+    SABORES MAIS INTENSOS
+    ═════════════════════════════════════════════════════════════════
+
+    ┌──────────────────────────────────────┬──────────────────────────────────────┐
+    │ Rucula e Tomate Seco        R$ 58,90 │ Carne Seca com Catupiry     R$ 64,90 │
+    │ Base cremosa, muzzarela, rucula      │ Carne seca desfiada, catupiry       │
+    │ fresca (pós-forno), tomate seco,     │ cremoso, cebola e toque de oregano. │
+    │ crocante no paladar.                 │ Sabor nordestino forte.            │
+    └──────────────────────────────────────┴──────────────────────────────────────┘
+
+    [PEDIR NO WHATSAPP]
+
+
+TABLET VIEW (860-1100px)
+─────────────────────────────────────────────────────────────────────────────
+
+    Mesmo layout 2 colunas mas com padding reduzido
+    Responsivo mas mantendo foco no texto
+
+    ┌─────────────────────────────┬─────────────────────────────┐
+    │ Calabresa Especial  R$ 52,90│ Portuguesa Pizza Kid R$ 57,90│
+    │ Descrição aqui...           │ Descrição aqui...           │
+    ├─────────────────────────────┼─────────────────────────────┤
+    │ Frango com Catupiry R$ 59,90│ Quatro Queijos      R$ 61,90│
+    │ Descrição aqui...           │ Descrição aqui...           │
+    └─────────────────────────────┴─────────────────────────────┘
+
+
+MOBILE VIEW (< 680px)
+─────────────────────────────────────────────────────────────────────────────
+
+    ┌──────────────────────────────────────────┐
+    │ Calabresa Especial        R$ 52,90       │
+    │                                          │
+    │ Molho artesanal, muzzarela de qualidade, │
+    │ calabresa selecionada, cebola, oregano   │
+    │ e azeitonas pretas. O sabor que reune    │
+    │ geracao.                                 │
+    │ [Mais pedido]                            │
+    ├──────────────────────────────────────────┤
+    │ Portuguesa Pizza Kid      R$ 57,90       │
+    │                                          │
+    │ Muzzarela cremosa, presunto, ovos        │
+    │ frescos, cebola, pimentao, ervilha.      │
+    │ A combinacao que todos conhecem e amam.  │
+    ├──────────────────────────────────────────┤
+    │ Frango com Catupiry       R$ 59,90       │
+    │                                          │
+    │ Frango desfiado temperado na manteiga,   │
+    │ catupiry derretido e fio de parmesao.    │
+    │ Finalizacao cremosa impecavel.           │
+    │ [Destaque da casa]                       │
+    └──────────────────────────────────────────┘
+
+
+HOVER EFFECT (All devices)
+─────────────────────────────────────────────────────────────────────────────
+
+    NORMAL STATE:
+    ┌──────────────────────────────────────┐
+    │ Calabresa Especial        R$ 52,90   │
+    │ Descrição...                         │
+    │ [Mais pedido]                        │
+    └──────────────────────────────────────┘
+
+    HOVER STATE:
+    │ ← borda vermelha ativa
+    │  Calabresa Especial        R$ 52,90   
+    │  Descrição...                         
+    │  [Mais pedido]                        
+    │  (slide leve para direita)
+    └──────────────────────────────────────┘
+    (sombra suave ativa)
+
+
+KEY VISUAL ELEMENTS
+─────────────────────────────────────────────────────────────────────────────
+
+✓ Menu Item Name:         1.1rem, font-weight 800 (destaque)
+✓ Description:            0.95rem, color: --gray-600 (leitura)
+✓ Price:                  1.1rem, color: --red, font-weight 800
+✓ Badge:                  Pequeno pill com background light
+✓ Category Title:         1.15rem, uppercase, borda vermelha inferior
+✓ Spacing between items:  16px gap
+✓ Padding interno:        20px
+✓ Border radius:          18px
+
+
+COMPARISON: ANTES vs DEPOIS
+─────────────────────────────────────────────────────────────────────────────
+
+ANTES (com imagens):
+- Grid 3 colunas
+- Imagem grande (aspect ratio 1.2/1)
+- Texto pequeno
+- Mais cliques para ver tudo
+- Menor densidade de informação
+
+DEPOIS (sem imagens):
+- Grid 2 colunas
+- Sem espaço perdido em imagem
+- Texto maior e mais legível
+- Descrições completas visíveis
+- Maior densidade de informação útil
+- Hover effect para interação
+- 25% mais rápido para carregar
+
+
+═══════════════════════════════════════════════════════════════════════════════

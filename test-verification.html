@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Kid - Test Verification</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+    .test { padding: 15px; margin: 10px 0; border-radius: 8px; background: white; }
+    .pass { border-left: 4px solid green; }
+    .fail { border-left: 4px solid red; }
+    h2 { margin-top: 0; }
+    .code { background: #f0f0f0; padding: 10px; border-radius: 4px; font-family: monospace; margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <h1>Pizza Kid Website - Verification Tests</h1>
+  <div id="results"></div>
+
+  <script src="data/site.js"></script>
+  <script src="data/menu.js"></script>
+  <script src="data/instagram.js"></script>
+
+  <script>
+    var results = [];
+
+    function test(name, condition) {
+      results.push({ name, pass: condition });
+    }
+
+    // Test data loading
+    test("siteData loaded", typeof siteData === 'object');
+    test("menuData loaded", typeof menuData === 'object');
+    test("instagramPosts loaded", typeof instagramPosts === 'object');
+
+    // Test siteData structure
+    test("siteData.promoDay exists", siteData && siteData.promoDay);
+    test("siteData.promoDay.segunda exists", siteData.promoDay.segunda !== undefined);
+    test("siteData.features exists", siteData.features && Array.isArray(siteData.features));
+    test("siteData.features has 8 items", siteData.features.length === 8);
+    test("siteData.gallery exists", siteData.gallery && Array.isArray(siteData.gallery));
+    test("siteData.infoBar exists", siteData.infoBar && Array.isArray(siteData.infoBar));
+    test("siteData.contact exists", siteData.contact && Array.isArray(siteData.contact));
+
+    // Test menuData structure
+    test("menuData is array", Array.isArray(menuData));
+    test("menuData has 7 categories", menuData.length === 7);
+    test("First menu item has categories", menuData[0].categories && menuData[0].categories.length > 0);
+
+    // Test Instagram posts
+    test("instagramPosts is array", Array.isArray(instagramPosts));
+    test("instagramPosts has 6 items", instagramPosts.length === 6);
+    test("First post has image", instagramPosts[0].image !== undefined);
+    test("First post has caption", instagramPosts[0].caption !== undefined);
+
+    // Test promotions
+    test("Quarta has promotions", siteData.promoDay.quarta && siteData.promoDay.quarta.length > 0);
+    test("Sabado has highlight promo", siteData.promoDay.sabado && siteData.promoDay.sabado[0].highlight === true);
+
+    // Render results
+    var resultsHtml = results.map(function(r) {
+      var className = r.pass ? 'pass' : 'fail';
+      var symbol = r.pass ? '✓' : '✗';
+      return '<div class="test ' + className + '"><strong>' + symbol + '</strong> ' + r.name + '</div>';
+    }).join('');
+
+    document.getElementById('results').innerHTML = resultsHtml;
+
+    var passCount = results.filter(function(r) { return r.pass; }).length;
+    var totalCount = results.length;
+    var passRate = Math.round(passCount / totalCount * 100);
+
+    var summary = '<div class="test" style="background: #e8f5e9; border-left: 4px solid green;"><h2>Summary: ' + passCount + '/' + totalCount + ' tests passed (' + passRate + '%)</h2></div>';
+    document.getElementById('results').innerHTML = summary + resultsHtml;
+  </script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Kid Taquaritinga | A Melhor Pizza da Cidade</title>
+  <meta name="description" content="Pizza Kid Taquaritinga: rodízio, delivery, pizzas artesanais, esfihas e muito mais. Área Kids exclusiva!">
+  <meta name="theme-color" content="#E62525">
+  
+  <!-- FAVICON ADICIONADO -->
+  <link rel="icon" href="assets/imagens/logo.png" type="image/png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <header class="header" id="header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Pizza Kid">
+          <img src="assets/imagens/logo.png" alt="Logo Pizza Kid" class="brand-logo">
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#promocoes" data-section="promocoes">Promoções</a>
+          <a href="#sobre" data-section="sobre">A Pizzaria</a>
+          <a href="#cardapio" data-section="cardapio">Cardápio</a>
+          <a href="#contato" data-section="contato">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-primary" href="#cardapio">Fazer Pedido</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+       <!-- HERO SECTION -->
+       <section class="hero" id="inicio">
+         <div class="hero-bg-shape"></div>
+         <div class="container hero-grid">
+           <div class="hero-content reveal">
+             <div class="hero-badge">🍕 A mais pedida de Taquaritinga</div>
+             <h1>Pizza quente,<br>família perto,<br><span class="text-yellow">fome que não passa.</span></h1>
+             <p>Descubra o melhor rodízio da cidade e um delivery rápido que leva o verdadeiro sabor artesanal até a sua mesa.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary btn-large" href="#cardapio">Pedir Agora</a>
+              <a class="btn btn-secondary btn-large" href="#promocoes">Ver Promoções</a>
+            </div>
+            <div class="hero-tags">
+              <span>🛵 Delivery Rápido</span>
+              <span>⭐ Avaliação 5 Estrelas</span>
+            </div>
+          </div>
+
+          <div class="hero-image reveal reveal-delay">
+            <div class="image-showcase">
+              <img src="assets/imagens/fachada.jpg" alt="Fachada da Pizza Kid Taquaritinga">
+              <div class="floating-card">
+                <div class="icon">🔥</div>
+                <div>
+                  <strong>Forno Perfeito</strong>
+                  <span>Massa sempre crocante!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROMOÇÕES -->
+      <section class="promos section bg-light" id="promocoes">
+        <div class="container">
+          <div class="section-header reveal text-center">
+            <span class="subtitle">Ofertas Exclusivas</span>
+            <h2>Promoções Imperdíveis</h2>
+          </div>
+          
+          <div class="promo-grid">
+            <div class="promo-card reveal">
+              <div class="promo-tag">Hoje!</div>
+              <div class="promo-content">
+                <h3>TERÇA MALUCA 🔥</h3>
+                <p>Hoje é dia de promoção daquelas que todo mundo ama!</p>
+                <ul>
+                  <li>🎉 Pizza redonda grande</li>
+                  <li>🍕 Vários sabores</li>
+                </ul>
+              </div>
+              <div class="promo-footer">
+                <div class="promo-price-box">
+                  <span>Por apenas</span>
+                  <strong>R$ 39,90</strong>
+                </div>
+                <button class="btn btn-primary btn-promo" data-name="Promo: Terça Maluca (Pizza G)" data-price="39.90" data-ispizza="true">Pedir</button>
+              </div>
+            </div>
+
+            <div class="promo-card reveal reveal-delay">
+              <div class="promo-tag tag-blue">Quarta</div>
+              <div class="promo-content">
+                <h3>QUARTA MALUCA 🍕</h3>
+                <p>O meio da semana pede uma pizza de qualidade à vontade.</p>
+                <ul>
+                  <li>✅ Rodízio completo</li>
+                  <li>✅ Pizzas doces e salgadas</li>
+                </ul>
+              </div>
+              <div class="promo-footer">
+                <div class="promo-price-box">
+                  <span>Rodízio por</span>
+                  <strong>R$ 49,90</strong>
+                </div>
+                <button class="btn btn-primary btn-promo" data-name="Promo: Rodízio Quarta Maluca" data-price="49.90" data-ispizza="false">Pedir</button>
+              </div>
+            </div>
+
+            <div class="promo-card reveal">
+              <div class="promo-tag tag-dark">Fim de Semana</div>
+              <div class="promo-content">
+                <h3>SEXTA, SÁB E FERIADOS</h3>
+                <p>A combinação perfeita para aproveitar com quem você ama.</p>
+                <ul>
+                  <li>🥤 Coca-Cola à vontade!</li>
+                  <li>🍕 Rodízio Premium</li>
+                </ul>
+              </div>
+              <div class="promo-footer">
+                <div class="promo-price-box">
+                  <span>Por pessoa</span>
+                  <strong>R$ 65,00</strong>
+                </div>
+                <button class="btn btn-primary btn-promo" data-name="Promo: Rodízio Fim de Semana" data-price="65.00" data-ispizza="false">Pedir</button>
+              </div>
+            </div>
+
+            <div class="promo-card reveal reveal-delay">
+              <div class="promo-tag tag-gold">Combo</div>
+              <div class="promo-content">
+                <h3>COMBO DELÍCIA ✨</h3>
+                <p>Garanta o jantar de hoje com qualidade e sabor de verdade!</p>
+                <ul>
+                  <li>🍕 1 Pizza G (Mussarela, Calabresa, Marguerita e mais)</li>
+                  <li>🥤 1 Guaraná Devito 2L</li>
+                </ul>
+              </div>
+              <div class="promo-footer">
+                <div class="promo-price-box">
+                  <span>Por apenas</span>
+                  <strong>R$ 55,90</strong>
+                </div>
+                <button class="btn btn-primary btn-promo" data-name="Combo: Pizza G + Guaraná 2L" data-price="55.90" data-ispizza="true">Pedir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARDÁPIO DIGITAL -->
+       <section class="menu section" id="cardapio">
+         <div class="container">
+            <div class="section-header reveal text-center">
+              <span class="subtitle">Nosso Menu</span>
+              <h2>Faça seu Pedido</h2>
+              <p>Escolha sua pizza, monte o pedido (meio a meio disponível) e adicione ao carrinho.</p>
+            </div>
+           
+           <div class="menu-tabs reveal" id="menuTabs"></div>
+           <div class="menu-panels" id="menuPanels"></div>
+          </div>
+        </section>
+
+      <!-- SOBRE A PIZZARIA & ÁREA KIDS -->
+      <section class="about section bg-light" id="sobre">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-content reveal">
+              <span class="subtitle">A Pizzaria</span>
+              <h2>Tradição, conforto e a melhor pizza da cidade.</h2>
+              <p>O clima é leve, o atendimento é focado em você e o nosso espaço foi montado para receber famílias e amigos. Temos mesas ao ar livre, salão espaçoso e muito sabor rolando no forno.</p>
+              
+              <div class="features-list">
+                <div class="feature-item">
+                  <div class="feat-icon">🍷</div>
+                  <div>
+                    <h4>Comida de Boteco</h4>
+                    <span>Além das pizzas, temos porções e entradas deliciosas.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-images reveal reveal-delay">
+              <img src="assets/imagens/pista-pizza.jpg" alt="Pista da Pizza Kid" class="img-main">
+              <img src="assets/imagens/comida-boteco.jpg" alt="Porções e Entradas" class="img-sub">
+            </div>
+          </div>
+
+          <div class="kids-area-block reveal">
+            <div class="kids-content">
+              <h3>🧸 Área Kids Exclusiva</h3>
+              <p>Pensando no conforto de toda a família, criamos um espaço <strong>totalmente separado da pizzaria</strong>. As crianças brincam com segurança e muita diversão enquanto você relaxa, janta e aproveita a noite com tranquilidade.</p>
+            </div>
+            <div class="kids-image">
+              <img src="assets/imagens/area-kids.jpg" alt="Área Kids da Pizza Kid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO & MAPA -->
+      <section class="contact section" id="contato">
+        <div class="container">
+          <div class="contact-box reveal">
+            <div class="contact-info">
+              <h2>Visite ou Peça em Casa</h2>
+              <p>R. Prudente de Moraes, 977 - Centro<br>Taquaritinga - SP, 15900-053</p>
+              
+              <div class="contact-hours">
+                <strong>Horário de Funcionamento:</strong>
+                <span>Segunda: 18:00 às 23:30</span>
+                <span>Terça: Fechado</span>
+                <span>Qua a Dom: 18:00 às 23:30</span>
+              </div>
+              
+              <a href="https://wa.me/551632526169" target="_blank" rel="noopener" class="btn btn-primary btn-large">Enviar Mensagem</a>
+            </div>
+            <div class="contact-map">
+              <iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=R.%20Prudente%20de%20Moraes,%20977%20-%20Centro,%20Taquaritinga%20-%20SP,%2015900-053&output=embed"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="assets/imagens/logo.png" alt="Logo Pizza Kid">
+          <p>O sabor que reúne quem você gosta.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#promocoes">Promoções</a>
+          <a href="#cardapio">Fazer Pedido</a>
+          <a href="#sobre">Área Kids</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/551632526169" class="float-wpp" id="floatWpp" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+      <path d="M16.11 0C7.26 0 .06 7.2 .06 16.05c0 2.82.74 5.56 2.14 8L.15 31.85l7.98-2.09c2.39 1.28 5.09 1.95 7.97 1.95 8.84 0 16.05-7.2 16.05-16.05S24.95 0 16.11 0zm0 29.07c-2.4 0-4.75-.64-6.81-1.86l-.49-.29-5.06 1.33 1.35-4.94-.32-.5A13.1 13.1 0 0 1 2.7 16.05C2.7 8.66 8.71 2.65 16.11 2.65S29.51 8.66 29.51 16.05 23.51 29.07 16.11 29.07zm7.38-10.02c-.4-.2-2.39-1.18-2.76-1.32-.37-.13-.64-.2-.91.2-.27.4-.99 1.32-1.22 1.59-.22.27-.45.3-.85.1-1.63-.82-3.13-1.89-4.26-3.1-.96-1.02-1.6-2.22-1.89-3.47-.05-.22.1-.37.28-.54.16-.16.37-.43.56-.65.18-.21.24-.36.36-.6.12-.24.06-.45-.04-.65-.1-.2-1.01-2.43-1.38-3.32-.36-.88-.72-.76-.98-.77h-.84c-.28 0-.74.1-1.13.52-.4.43-1.5 1.47-1.5 3.58 0 2.11 1.54 4.15 1.76 4.45.21.29 3.03 4.63 7.34 6.49.95.41 1.95.73 2.97.94 1.09.22 2.1.18 2.89.06 1.01-.15 2.39-.98 2.72-1.92.34-.94.34-1.74.24-1.92-.1-.18-.37-.28-.77-.48z"/>
+    </svg>
+  </a>
+
+  <!-- MODAL DE PRODUTO -->
+  <div class="modal-overlay" id="pizzaModal">
+    <div class="modal-container">
+      <button class="btn-close" id="closeModal" aria-label="Fechar">✕</button>
+      
+      <div class="modal-header-info">
+        <h3 id="modalPizzaName">Nome da Pizza</h3>
+        <p id="modalPizzaDesc">Descrição detalhada dos ingredientes.</p>
+      </div>
+
+      <div class="modal-content-scroll">
+        <div class="modal-form">
+          <div class="form-group" id="pizzaSizeWrapper">
+            <label class="form-label">Escolha o Tamanho</label>
+            <div class="select-wrapper">
+              <select id="pizzaSize">
+                <option value="P">Pequena (4 fatias)</option>
+                <option value="M">Média (6 fatias)</option>
+                <option value="G" selected>Grande (8 fatias)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" id="halfAndHalfWrapper">
+            <div class="toggle-card">
+              <div class="toggle-info">
+                <strong>Dividir Sabor (Meio a Meio)</strong>
+                <span>Escolha uma segunda metade</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="halfAndHalfCheck">
+                <span class="slider"></span>
+              </label>
+            </div>
+            
+            <div id="secondFlavorContainer" class="second-flavor-box" style="display: none;">
+              <label class="form-label">2ª Metade (Maior valor prevalece)</label>
+              <div class="select-wrapper">
+                <select id="secondFlavorSelect">
+                  <option value="">Selecione a outra metade...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Alguma observação?</label>
+            <textarea id="pizzaNotes" placeholder="Ex: Tirar cebola, sem orégano..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <div class="price-display">
+          <span>Total</span>
+          <strong id="modalPrice">R$ 0,00</strong>
+        </div>
+        <button class="btn btn-primary btn-add" id="addToCartBtn">Adicionar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DO CARRINHO (COM FORMULÁRIO DINÂMICO DE ENTREGA) -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal-container">
+      <button class="btn-close" id="closeCartModal" aria-label="Fechar">✕</button>
+      
+      <div class="modal-header-info">
+        <h3>Seu Pedido</h3>
+      </div>
+
+      <div class="modal-content-scroll">
+        <!-- Lista de Produtos -->
+        <div id="cartItemsList" class="cart-items-list">
+        </div>
+
+        <!-- Opções de Entrega -->
+        <div class="delivery-options">
+          <label class="delivery-card">
+            <input type="radio" name="deliveryOption" value="delivery" checked>
+            <div class="delivery-card-content">
+              <strong>Entregar no meu endereço</strong>
+              <span>Taxa de Entrega: R$ 7,00</span>
+            </div>
+          </label>
+          
+          <label class="delivery-card">
+            <input type="radio" name="deliveryOption" value="pickup">
+            <div class="delivery-card-content">
+              <strong>Retirar no Balcão</strong>
+              <span>Grátis</span>
+            </div>
+          </label>
+        </div>
+
+        <!-- Formulário Dinâmico de Checkout -->
+        <div class="checkout-form" id="checkoutForm">
+          <div class="form-group">
+            <label class="form-label">Seu Nome</label>
+            <input type="text" id="customerName" placeholder="Ex: João da Silva">
+          </div>
+
+          <div class="form-group" id="addressFieldWrapper">
+            <label class="form-label">Endereço de Entrega</label>
+            <input type="text" id="customerAddress" placeholder="Rua, Número, Bairro, Referência">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Forma de Pagamento</label>
+            <div class="select-wrapper">
+              <select id="paymentMethod">
+                <option value="PIX">PIX</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Dinheiro">Dinheiro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" id="changeWrapper" style="display: none;">
+            <label class="form-label">Troco para quanto?</label>
+            <input type="text" id="cashChange" placeholder="Ex: 100,00 (ou deixe em branco se não precisar)">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Resumo Valores e Botão Enviar -->
+      <div class="modal-actions modal-actions-vertical">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <strong id="cartSubtotalValue">R$ 0,00</strong>
+        </div>
+        <div class="summary-line">
+          <span>Taxa de Entrega</span>
+          <strong id="cartFeeValue">R$ 7,00</strong>
+        </div>
+        <div class="summary-total">
+          <span>Total a Pagar</span>
+          <strong id="cartFinalTotal">R$ 0,00</strong>
+        </div>
+        <button class="btn btn-primary btn-full" id="sendOrderWppBtn">Finalizar no WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARRINHO FLUTUANTE -->
+  <div class="cart-pill" id="floatingCart">
+    <div class="cart-pill-info">
+      <div class="cart-badge" id="cartCount">0</div>
+      <div class="cart-texts">
+        <span class="cart-title">Ver Carrinho</span>
+        <strong class="cart-total" id="cartTotalDisplay">R$ 0,00</strong>
+      </div>
+    </div>
+    <button class="btn btn-white" id="openCartBtn">Avançar ➔</button>
+  </div>
+
+  <script src="data/site.js"></script>
+  <script src="data/menu.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
