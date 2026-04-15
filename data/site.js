@@ -111,3 +111,39 @@ var siteData = {
     }
   ]
 };
+
+// Fallback para businessInfo (formato cardapio-admin)
+var businessInfoData = {
+  name: "Pizza Kid",
+  city: "Taquaritinga - SP",
+  slogan: "",
+  tagline: "",
+  whatsapp: "(16) 3252-6169",
+  whatsappNumber: "551632526169",
+  phone: "(16) 3252-6169",
+  address: "R. Prudente de Moraes, 977",
+  neighborhood: "Centro",
+  cityState: "Taquaritinga - SP",
+  cep: "15900-053",
+  instagram: "https://www.instagram.com/pizzakidtaq",
+  facebook: "",
+  googleMapsLink: "",
+  googleMapsEmbed: "",
+  hours: {
+    funcionamento: "Segunda a Domingo",
+    jantar: "17h00 as 23h30",
+    almoco: "",
+    completo: "Dom 17h30-23h30 | Seg 17h-23h | Ter 17h30-23h | Qua 17h30-23h30 | Qui 17h30-23h30 | Sex 17h30-23h30 | Sab 17h30-23h30"
+  }
+};
+
+// Fallback para promocoes (formato cardapio-admin)
+var promocoesData = {
+  domingo: [],
+  segunda: [],
+  terca: [],
+  quarta: [],
+  quinta: [],
+  sexta: [],
+  sabado: []
+};

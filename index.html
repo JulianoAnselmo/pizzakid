@@ -6,10 +6,55 @@
   <title>Pizza Kid Taquaritinga | A Melhor Pizza da Cidade</title>
   <meta name="description" content="Pizza Kid Taquaritinga: rodízio, delivery, pizzas artesanais, esfihas e muito mais. Área Kids exclusiva!">
   <meta name="theme-color" content="#E62525">
-  
-  <!-- FAVICON ADICIONADO -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Pizza Kid">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- FAVICON E APPLE TOUCH ICON -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/imagens/logo.png" type="image/png">
-  
+  <link rel="apple-touch-icon" href="assets/imagens/logo.png">
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pizza Kid Taquaritinga | A Melhor Pizza da Cidade">
+  <meta property="og:description" content="Pizza Kid Taquaritinga: rodizio, delivery, pizzas artesanais, esfihas e muito mais. Area Kids exclusiva!">
+  <meta property="og:image" content="assets/imagens/fachada.jpg">
+  <meta property="og:url" content="https://www.pizzakidtaquaritinga.com.br/">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pizza Kid Taquaritinga | A Melhor Pizza da Cidade">
+  <meta name="twitter:description" content="Pizza Kid Taquaritinga: rodizio, delivery, pizzas artesanais, esfihas e muito mais.">
+  <meta name="twitter:image" content="assets/imagens/fachada.jpg">
+
+  <link rel="canonical" href="https://www.pizzakidtaquaritinga.com.br/">
+
+  <!-- SEO: Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Pizza Kid Taquaritinga",
+    "image": "assets/imagens/fachada.jpg",
+    "telephone": "+551632526169",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Prudente de Moraes, 977 - Centro",
+      "addressLocality": "Taquaritinga",
+      "addressRegion": "SP",
+      "postalCode": "15900-053",
+      "addressCountry": "BR"
+    },
+    "servesCuisine": "Pizza",
+    "priceRange": "$$",
+    "url": "https://www.pizzakidtaquaritinga.com.br/"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,6 +62,7 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+  <a class="skip-link" href="#cardapio">Ir para o cardápio</a>
   <div class="app-container">
     
     <header class="header" id="header">
@@ -26,13 +72,17 @@
         </a>
 
         <nav class="nav" id="nav">
-          <a href="#promocoes" data-section="promocoes">Promoções</a>
+          <a href="#promocoes" data-section="promocoes">Ofertas</a>
           <a href="#sobre" data-section="sobre">A Pizzaria</a>
           <a href="#cardapio" data-section="cardapio">Cardápio</a>
           <a href="#contato" data-section="contato">Contato</a>
         </nav>
 
         <div class="header-actions">
+          <span class="open-status" id="openStatus" hidden>
+            <span class="open-status-dot" aria-hidden="true"></span>
+            <span class="open-status-text"></span>
+          </span>
           <a class="btn btn-primary" href="#cardapio">Fazer Pedido</a>
           <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
             <span></span><span></span><span></span>
@@ -42,6 +92,9 @@
     </header>
 
     <main>
+      <!-- BARRA DE PROMOCOES DO DIA (preenchida dinamicamente) -->
+      <div class="promo-bar" id="promoBar" style="display:none;"></div>
+
        <!-- HERO SECTION -->
        <section class="hero" id="inicio">
          <div class="hero-bg-shape"></div>
@@ -52,7 +105,7 @@
              <p>Descubra o melhor rodízio da cidade e um delivery rápido que leva o verdadeiro sabor artesanal até a sua mesa.</p>
             <div class="hero-buttons">
               <a class="btn btn-primary btn-large" href="#cardapio">Pedir Agora</a>
-              <a class="btn btn-secondary btn-large" href="#promocoes">Ver Promoções</a>
+<a class="btn btn-promo-day btn-large" id="heroDailyPromoBtn" href="#cardapio">🏷️ Promoções do Dia</a>
             </div>
             <div class="hero-tags">
               <span>🛵 Delivery Rápido</span>
@@ -84,8 +137,8 @@
           </div>
           
           <div class="promo-grid">
-            <div class="promo-card reveal">
-              <div class="promo-tag">Hoje!</div>
+            <div class="promo-card reveal" data-days="terca">
+              <div class="promo-tag" data-tag-label="Terça">Terça</div>
               <div class="promo-content">
                 <h3>TERÇA MALUCA 🔥</h3>
                 <p>Hoje é dia de promoção daquelas que todo mundo ama!</p>
@@ -103,8 +156,8 @@
               </div>
             </div>
 
-            <div class="promo-card reveal reveal-delay">
-              <div class="promo-tag tag-blue">Quarta</div>
+            <div class="promo-card reveal reveal-delay" data-days="quarta">
+              <div class="promo-tag tag-blue" data-tag-label="Quarta">Quarta</div>
               <div class="promo-content">
                 <h3>QUARTA MALUCA 🍕</h3>
                 <p>O meio da semana pede uma pizza de qualidade à vontade.</p>
@@ -122,8 +175,8 @@
               </div>
             </div>
 
-            <div class="promo-card reveal">
-              <div class="promo-tag tag-dark">Fim de Semana</div>
+            <div class="promo-card reveal" data-days="sexta sabado">
+              <div class="promo-tag tag-dark" data-tag-label="Sex &amp; Sab">Sex &amp; Sáb</div>
               <div class="promo-content">
                 <h3>SEXTA, SÁB E FERIADOS</h3>
                 <p>A combinação perfeita para aproveitar com quem você ama.</p>
@@ -141,8 +194,8 @@
               </div>
             </div>
 
-            <div class="promo-card reveal reveal-delay">
-              <div class="promo-tag tag-gold">Combo</div>
+            <div class="promo-card reveal reveal-delay" data-days="todos">
+              <div class="promo-tag tag-gold">Todos os dias</div>
               <div class="promo-content">
                 <h3>COMBO DELÍCIA ✨</h3>
                 <p>Garanta o jantar de hoje com qualidade e sabor de verdade!</p>
@@ -186,7 +239,8 @@
               <h2>Tradição, conforto e a melhor pizza da cidade.</h2>
               <p>O clima é leve, o atendimento é focado em você e o nosso espaço foi montado para receber famílias e amigos. Temos mesas ao ar livre, salão espaçoso e muito sabor rolando no forno.</p>
               
-              <div class="features-list">
+              <div class="features-list" id="featuresList">
+                <!-- preenchido dinamicamente por renderFeatures() -->
                 <div class="feature-item">
                   <div class="feat-icon">🍷</div>
                   <div>
@@ -221,18 +275,22 @@
           <div class="contact-box reveal">
             <div class="contact-info">
               <h2>Visite ou Peça em Casa</h2>
-              <p>R. Prudente de Moraes, 977 - Centro<br>Taquaritinga - SP, 15900-053</p>
-              
+              <p id="contact-address">R. Prudente de Moraes, 977 - Centro<br>Taquaritinga - SP, 15900-053</p>
+
               <div class="contact-hours">
                 <strong>Horário de Funcionamento:</strong>
-                <span>Segunda: 18:00 às 23:30</span>
-                <span>Terça: Fechado</span>
-                <span>Qua a Dom: 18:00 às 23:30</span>
+                <span id="contact-hours">Seg 17h-23h | Ter-Sab 17h30-23h30 | Dom 17h30-23h30</span>
               </div>
               
-              <a href="https://wa.me/551632526169" target="_blank" rel="noopener" class="btn btn-primary btn-large">Enviar Mensagem</a>
+              <a href="tel:+551632526169" id="contact-phone" class="contact-phone-link">(16) 3252-6169</a>
+
+              <div class="contact-social-links">
+                <a href="https://wa.me/551632526169" target="_blank" rel="noopener" class="btn btn-primary btn-large" id="contact-whatsapp-link">Enviar Mensagem</a>
+                <a href="#" id="contact-instagram-link" target="_blank" rel="noopener" class="btn btn-secondary">Instagram</a>
+                <a href="#" id="contact-maps-link" target="_blank" rel="noopener" class="btn btn-secondary">Ver no Google Maps</a>
+              </div>
             </div>
-            <div class="contact-map">
+            <div class="contact-map" id="contactMap">
               <iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=R.%20Prudente%20de%20Moraes,%20977%20-%20Centro,%20Taquaritinga%20-%20SP,%2015900-053&output=embed"></iframe>
             </div>
           </div>
@@ -248,10 +306,13 @@
           <p>O sabor que reúne quem você gosta.</p>
         </div>
         <div class="footer-links">
-          <a href="#promocoes">Promoções</a>
+          <a href="#promocoes">Ofertas</a>
           <a href="#cardapio">Fazer Pedido</a>
           <a href="#sobre">Área Kids</a>
         </div>
+      </div>
+      <div class="footer-dev-bar">
+        <p class="footer-dev"><a href="https://julianoanselmo.github.io/portifolio/" target="_blank" rel="noopener">Desenvolvido por Juliano Anselmo</a></p>
       </div>
     </footer>
   </div>
@@ -265,9 +326,9 @@
 
   <!-- MODAL DE PRODUTO -->
   <div class="modal-overlay" id="pizzaModal">
-    <div class="modal-container">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalPizzaName">
       <button class="btn-close" id="closeModal" aria-label="Fechar">✕</button>
-      
+
       <div class="modal-header-info">
         <h3 id="modalPizzaName">Nome da Pizza</h3>
         <p id="modalPizzaDesc">Descrição detalhada dos ingredientes.</p>
@@ -276,7 +337,7 @@
       <div class="modal-content-scroll">
         <div class="modal-form">
           <div class="form-group" id="pizzaSizeWrapper">
-            <label class="form-label">Escolha o Tamanho</label>
+            <label class="form-label" for="pizzaSize">Escolha o Tamanho</label>
             <div class="select-wrapper">
               <select id="pizzaSize">
                 <option value="P">Pequena (4 fatias)</option>
@@ -286,30 +347,14 @@
             </div>
           </div>
 
-          <div class="form-group" id="halfAndHalfWrapper">
-            <div class="toggle-card">
-              <div class="toggle-info">
-                <strong>Dividir Sabor (Meio a Meio)</strong>
-                <span>Escolha uma segunda metade</span>
-              </div>
-              <label class="switch">
-                <input type="checkbox" id="halfAndHalfCheck">
-                <span class="slider"></span>
-              </label>
-            </div>
-            
-            <div id="secondFlavorContainer" class="second-flavor-box" style="display: none;">
-              <label class="form-label">2ª Metade (Maior valor prevalece)</label>
-              <div class="select-wrapper">
-                <select id="secondFlavorSelect">
-                  <option value="">Selecione a outra metade...</option>
-                </select>
-              </div>
-            </div>
+          <div class="form-group" id="flavorSplitWrapper" style="display:none;">
+            <label class="form-label" id="flavorSplitLabel">Dividir sabores</label>
+            <div id="flavorPartsList" class="flavor-parts-list"></div>
+            <button type="button" class="btn-add-part" id="addFlavorPart">+ Adicionar parte</button>
           </div>
 
           <div class="form-group">
-            <label class="form-label">Alguma observação?</label>
+            <label class="form-label" for="pizzaNotes">Alguma observação?</label>
             <textarea id="pizzaNotes" placeholder="Ex: Tirar cebola, sem orégano..."></textarea>
           </div>
         </div>
@@ -325,87 +370,183 @@
     </div>
   </div>
 
-  <!-- MODAL DO CARRINHO (COM FORMULÁRIO DINÂMICO DE ENTREGA) -->
+  <!-- MODAL DO CARRINHO — WIZARD 3 ETAPAS -->
   <div class="modal-overlay" id="cartModal">
-    <div class="modal-container">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
       <button class="btn-close" id="closeCartModal" aria-label="Fechar">✕</button>
-      
+
+      <!-- Stepper de progresso -->
+      <div class="cart-stepper" id="cartStepper" aria-label="Etapas do pedido">
+        <div class="cart-step active" data-step="1">
+          <span class="cart-step-num"><span class="step-n">1</span></span>
+          <span class="cart-step-label">Itens</span>
+        </div>
+        <div class="cart-step-line"></div>
+        <div class="cart-step" data-step="2">
+          <span class="cart-step-num"><span class="step-n">2</span></span>
+          <span class="cart-step-label">Entrega</span>
+        </div>
+        <div class="cart-step-line"></div>
+        <div class="cart-step" data-step="3">
+          <span class="cart-step-num"><span class="step-n">3</span></span>
+          <span class="cart-step-label">Pagamento</span>
+        </div>
+      </div>
+
       <div class="modal-header-info">
-        <h3>Seu Pedido</h3>
+        <h3 id="cartModalTitle">Seu Pedido</h3>
       </div>
 
       <div class="modal-content-scroll">
-        <!-- Lista de Produtos -->
-        <div id="cartItemsList" class="cart-items-list">
+
+        <!-- STEP 1: Lista de itens -->
+        <div class="cart-step-panel" data-panel="1">
+          <div class="cart-closed-warning" id="cartClosedWarning" hidden>
+            <strong>⚠️ Estamos fechados agora</strong>
+            <span>Você ainda pode enviar o pedido — vamos confirmar quando reabrir.</span>
+          </div>
+          <div id="cartItemsList" class="cart-items-list"></div>
+          <div class="cart-step-summary">
+            <span>Subtotal</span>
+            <strong id="step1Subtotal">R$ 0,00</strong>
+          </div>
         </div>
 
-        <!-- Opções de Entrega -->
-        <div class="delivery-options">
-          <label class="delivery-card">
-            <input type="radio" name="deliveryOption" value="delivery" checked>
-            <div class="delivery-card-content">
-              <strong>Entregar no meu endereço</strong>
-              <span>Taxa de Entrega: R$ 7,00</span>
+        <!-- STEP 2: Entrega -->
+        <div class="cart-step-panel" data-panel="2" hidden>
+
+          <!-- Opções de entrega com ícones -->
+          <div class="delivery-options">
+            <label class="delivery-card">
+              <input type="radio" name="deliveryOption" value="delivery" checked>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><circle cx="12" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>
+              <div class="delivery-card-content">
+                <strong>Entregar no meu endereço</strong>
+                <span>Taxa de Entrega: R$ 7,00</span>
+              </div>
+            </label>
+            <label class="delivery-card">
+              <input type="radio" name="deliveryOption" value="pickup">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <div class="delivery-card-content">
+                <strong>Retirar no Balcão</strong>
+                <span>Grátis <span class="savings-badge">Economize R$ 7,00</span></span>
+              </div>
+            </label>
+          </div>
+
+          <!-- Formulário de entrega -->
+          <div class="checkout-form" id="checkoutForm">
+            <div class="form-group">
+              <label class="form-label" for="customerName">Seu Nome</label>
+              <input type="text" id="customerName" placeholder="Ex: João da Silva" required autocomplete="name">
+              <small class="error-msg" id="customerNameError" hidden></small>
             </div>
-          </label>
-          
-          <label class="delivery-card">
-            <input type="radio" name="deliveryOption" value="pickup">
-            <div class="delivery-card-content">
-              <strong>Retirar no Balcão</strong>
-              <span>Grátis</span>
+
+            <div id="deliveryFields">
+              <div class="form-group">
+                <label class="form-label" for="customerCep">CEP</label>
+                <input type="text" id="customerCep" placeholder="00000-000" maxlength="9" autocomplete="postal-code" inputmode="numeric">
+                <small class="error-msg" id="customerCepError" hidden></small>
+                <small class="cep-loading-msg" id="customerCepLoading" hidden>Buscando endereço...</small>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="customerAddress">Rua e Número</label>
+                <input type="text" id="customerAddress" placeholder="Ex: Rua das Flores, 123" autocomplete="address-line1">
+                <small class="error-msg" id="customerAddressError" hidden></small>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="customerNeighborhood">Bairro</label>
+                <input type="text" id="customerNeighborhood" placeholder="Ex: Centro" autocomplete="address-level3">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="customerComplement">Complemento / Referência <span class="form-label-optional">(opcional)</span></label>
+                <input type="text" id="customerComplement" placeholder="Ex: Apto 12, próximo ao mercado" autocomplete="address-line2">
+              </div>
             </div>
-          </label>
+          </div>
         </div>
 
-        <!-- Formulário Dinâmico de Checkout -->
-        <div class="checkout-form" id="checkoutForm">
-          <div class="form-group">
-            <label class="form-label">Seu Nome</label>
-            <input type="text" id="customerName" placeholder="Ex: João da Silva">
+        <!-- STEP 3: Pagamento -->
+        <div class="cart-step-panel" data-panel="3" hidden>
+
+          <!-- Cards de pagamento -->
+          <p class="form-label" style="margin-bottom:12px;">Forma de Pagamento</p>
+          <div class="payment-cards" role="radiogroup" aria-label="Forma de pagamento">
+            <label class="payment-card recommended">
+              <input type="radio" name="paymentMethod" value="PIX" checked>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.9 2a9.9 9.9 0 1 0 0 19.8A9.9 9.9 0 0 0 11.9 2zm-1.3 5.5 1.3-1.3 1.3 1.3-1.3 1.3zm3.9 3.9-1.3 1.3-1.3-1.3 1.3-1.3zM8 11.4l1.3-1.3 1.3 1.3-1.3 1.3zm3.9 3.9-1.3 1.3-1.3-1.3 1.3-1.3zm-3.9 0L6.7 14l1.3-1.3L9.3 14zm7.8-3.9-1.3 1.3-1.3-1.3 1.3-1.3z"/></svg>
+              <span>PIX</span>
+            </label>
+            <label class="payment-card">
+              <input type="radio" name="paymentMethod" value="Cartão de Crédito">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              <span>Crédito</span>
+            </label>
+            <label class="payment-card">
+              <input type="radio" name="paymentMethod" value="Cartão de Débito">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              <span>Débito</span>
+            </label>
+            <label class="payment-card">
+              <input type="radio" name="paymentMethod" value="Dinheiro">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/><path d="M5 4v2M19 4v2M5 18v2M19 18v2"/></svg>
+              <span>Dinheiro</span>
+            </label>
           </div>
 
-          <div class="form-group" id="addressFieldWrapper">
-            <label class="form-label">Endereço de Entrega</label>
-            <input type="text" id="customerAddress" placeholder="Rua, Número, Bairro, Referência">
+          <!-- Troco -->
+          <div class="form-group" id="changeWrapper" style="display:none;">
+            <label class="form-label" for="cashChange">Troco para quanto?</label>
+            <input type="text" id="cashChange" placeholder="Ex: 100,00" inputmode="decimal">
+            <small class="change-result" id="changeResult" hidden></small>
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Forma de Pagamento</label>
-            <div class="select-wrapper">
-              <select id="paymentMethod">
-                <option value="PIX">PIX</option>
-                <option value="Cartão de Crédito">Cartão de Crédito</option>
-                <option value="Cartão de Débito">Cartão de Débito</option>
-                <option value="Dinheiro">Dinheiro</option>
-              </select>
+          <!-- Resumo do pedido -->
+          <div class="order-summary-box">
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <strong id="cartSubtotalValue">R$ 0,00</strong>
             </div>
-          </div>
-
-          <div class="form-group" id="changeWrapper" style="display: none;">
-            <label class="form-label">Troco para quanto?</label>
-            <input type="text" id="cashChange" placeholder="Ex: 100,00 (ou deixe em branco se não precisar)">
+            <div class="summary-line">
+              <span>Taxa de Entrega</span>
+              <strong id="cartFeeValue">R$ 7,00</strong>
+            </div>
+            <div class="summary-total">
+              <span>Total a Pagar</span>
+              <strong id="cartFinalTotal">R$ 0,00</strong>
+            </div>
           </div>
         </div>
 
       </div>
 
-      <!-- Resumo Valores e Botão Enviar -->
-      <div class="modal-actions modal-actions-vertical">
-        <div class="summary-line">
-          <span>Subtotal</span>
-          <strong id="cartSubtotalValue">R$ 0,00</strong>
-        </div>
-        <div class="summary-line">
-          <span>Taxa de Entrega</span>
-          <strong id="cartFeeValue">R$ 7,00</strong>
-        </div>
-        <div class="summary-total">
-          <span>Total a Pagar</span>
-          <strong id="cartFinalTotal">R$ 0,00</strong>
-        </div>
-        <button class="btn btn-primary btn-full" id="sendOrderWppBtn">Finalizar no WhatsApp</button>
+      <!-- Navegação do wizard -->
+      <div class="modal-actions cart-nav">
+        <button class="btn btn-ghost" id="cartBackBtn" hidden>← Voltar</button>
+        <button class="btn btn-primary" id="cartNextBtn">Continuar →</button>
       </div>
+
+      <!-- Overlay de confirmação (step final) -->
+      <div class="cart-confirm-overlay" id="cartConfirmOverlay" hidden aria-live="polite">
+        <div class="confirm-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Tudo certo?</h3>
+          <p>Confira os dados do seu pedido antes de enviar</p>
+        </div>
+        <div class="confirm-summary" id="confirmSummary"></div>
+        <div class="confirm-actions">
+          <button class="btn btn-ghost" id="confirmBackBtn">← Revisar</button>
+          <button class="btn btn-primary btn-wpp" id="confirmSendBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -421,8 +562,9 @@
     <button class="btn btn-white" id="openCartBtn">Avançar ➔</button>
   </div>
 
-  <script src="data/site.js"></script>
-  <script src="data/menu.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="data/site.js" defer></script>
+  <script src="data/menu.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="data/firestore.js" defer></script>
 </body>
 </html>

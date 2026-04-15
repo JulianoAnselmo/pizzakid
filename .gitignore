@@ -1,0 +1,17 @@
+# Dependências
+node_modules/
+
+# Claude Code local
+.claude/
+
+# Arquivos de trabalho / scripts de migração
+output/
+pizzakid_eatfood_raw.json
+scripts/migrate-eatfood.js
+scripts/sync-eatfood.js
+package.json
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
