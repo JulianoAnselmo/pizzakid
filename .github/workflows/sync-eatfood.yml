@@ -1,0 +1,45 @@
+name: Sync EatFood to Firestore
+
+on:
+  schedule:
+    - cron: "30 19-23,0-2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-eatfood
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias
+        run: npm install firebase-admin@^12 --no-save
+
+      - name: Restaurar service account do secret
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PROD }}
+        run: |
+          if [ -z "$SA" ]; then
+            echo "Secret FIREBASE_SERVICE_ACCOUNT_PROD nao configurado" >&2
+            exit 1
+          fi
+          printf '%s' "$SA" > serviceAccountProd.json
+          node -e "require('./serviceAccountProd.json')"
+
+      - name: Rodar sync
+        run: node scripts/sync-eatfood.js
+
+      - name: Limpar credenciais
+        if: always()
+        run: rm -f serviceAccountProd.json
