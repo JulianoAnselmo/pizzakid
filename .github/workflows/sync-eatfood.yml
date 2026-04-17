@@ -2,7 +2,7 @@ name: Sync EatFood to Firestore
 
 on:
   schedule:
-    - cron: "30 19-23,0-2 * * *"
+    - cron: "30 21-23,0-2 * * *"
   workflow_dispatch:
 
 permissions:
