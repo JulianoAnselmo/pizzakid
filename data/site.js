@@ -107,7 +107,7 @@ var siteData = {
     },
     {
       label: "Horario",
-      value: "Segunda, quarta, quinta, sexta, sabado, domingo: 18h-23h30 | Terca: fechado"
+      value: "Seg 17h-23h | Ter-Sab 17h30-23h30 | Dom 17h30-23h30"
     }
   ]
 };
@@ -116,8 +116,8 @@ var siteData = {
 var businessInfoData = {
   name: "Pizza Kid",
   city: "Taquaritinga - SP",
-  slogan: "",
-  tagline: "",
+  slogan: "A melhor pizza da cidade",
+  tagline: "Rodízio, delivery e Área Kids exclusiva",
   whatsapp: "(16) 3252-6169",
   whatsappNumber: "551632526169",
   phone: "(16) 3252-6169",
@@ -127,13 +127,13 @@ var businessInfoData = {
   cep: "15900-053",
   instagram: "https://www.instagram.com/pizzakidtaq",
   facebook: "",
-  googleMapsLink: "",
-  googleMapsEmbed: "",
+  googleMapsLink: "https://www.google.com/maps?q=R.+Prudente+de+Moraes,+977+-+Centro,+Taquaritinga+-+SP,+15900-053",
+  googleMapsEmbed: "https://www.google.com/maps?q=R.%20Prudente%20de%20Moraes,%20977%20-%20Centro,%20Taquaritinga%20-%20SP,%2015900-053&output=embed",
   hours: {
     funcionamento: "Segunda a Domingo",
-    jantar: "17h00 as 23h30",
+    jantar: "17h00 às 23h30",
     almoco: "",
-    completo: "Dom 17h30-23h30 | Seg 17h-23h | Ter 17h30-23h | Qua 17h30-23h30 | Qui 17h30-23h30 | Sex 17h30-23h30 | Sab 17h30-23h30"
+    completo: "Seg 17h-23h | Ter-Sab 17h30-23h30 | Dom 17h30-23h30"
   }
 };
 
@@ -141,9 +141,9 @@ var businessInfoData = {
 var promocoesData = {
   domingo: [],
   segunda: [],
-  terca: [],
-  quarta: [],
-  quinta: [],
-  sexta: [],
-  sabado: []
+  terca:   [{ texto: "TERÇA MALUCA — Pizza G por R$ 39,90", destaque: true }],
+  quarta:  [{ texto: "QUARTA MALUCA — Rodízio por R$ 49,90", destaque: true }],
+  quinta:  [],
+  sexta:   [{ texto: "Rodízio Premium + Coca à vontade — R$ 65 por pessoa", destaque: true }],
+  sabado:  [{ texto: "Rodízio Premium + Coca à vontade — R$ 65 por pessoa", destaque: true }]
 };

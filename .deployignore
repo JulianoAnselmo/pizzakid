@@ -1,0 +1,46 @@
+# Arquivos que NÃO devem ir para o servidor de produção.
+# Use esta lista como referência ao configurar o deploy (Netlify, Vercel,
+# GitHub Pages com action, rsync etc.). O conteúdo abaixo é apenas para
+# documentação — cada plataforma tem seu próprio mecanismo de exclusão.
+
+# Documentação interna
+IMPLEMENTATION_COMPLETE.md
+IMPROVEMENTS.md
+MENU_LAYOUT_VISUAL.txt
+MENU_RESTRUCTURE.md
+PIZZA_SELECTION_FEATURE.md
+PROJECT_STATUS.md
+STATUS_FINAL.md
+docs/
+
+# Logs e teste manual
+server.log
+test-verification.html
+
+# Scripts de sync/migração (rodam localmente, não servem em produção)
+# OBS: scripts/main.js É usado em produção — excluir apenas os outros.
+scripts/sync-eatfood.js
+scripts/migrate-eatfood.js
+pizzakid_eatfood_raw.json
+output/
+
+# Dependências de dev
+node_modules/
+package.json
+package-lock.json
+
+# Git / editor
+.git/
+.gitignore
+.claude/
+.deployignore
+
+# Publicar apenas:
+#   index.html
+#   manifest.webmanifest
+#   robots.txt
+#   sitemap.xml
+#   assets/
+#   data/
+#   styles/
+#   scripts/main.js

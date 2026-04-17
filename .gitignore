@@ -12,6 +12,23 @@ scripts/sync-eatfood.js
 package.json
 package-lock.json
 
+# Logs e testes manuais
+server.log
+test-verification.html
+
+# Notas de desenvolvimento (não publicar)
+IMPLEMENTATION_COMPLETE.md
+IMPROVEMENTS.md
+MENU_LAYOUT_VISUAL.txt
+MENU_RESTRUCTURE.md
+PIZZA_SELECTION_FEATURE.md
+PROJECT_STATUS.md
+STATUS_FINAL.md
+
+# GitHub Pages — CNAME só deve ser comitado depois que o domínio for comprado
+# e os registros DNS apontarem para o GitHub. Enquanto isso, mantenha vazio.
+CNAME
+
 # OS
 .DS_Store
 Thumbs.db

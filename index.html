@@ -14,14 +14,17 @@
 
   <!-- FAVICON E APPLE TOUCH ICON -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" href="assets/imagens/logo.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/imagens/logo.png">
+  <link rel="apple-touch-icon" href="assets/imagens/apple-touch-icon.png">
 
   <!-- SEO: Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pizza Kid Taquaritinga | A Melhor Pizza da Cidade">
   <meta property="og:description" content="Pizza Kid Taquaritinga: rodizio, delivery, pizzas artesanais, esfihas e muito mais. Area Kids exclusiva!">
-  <meta property="og:image" content="assets/imagens/fachada.jpg">
+  <meta property="og:image" content="https://www.pizzakidtaquaritinga.com.br/assets/imagens/fachada.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://www.pizzakidtaquaritinga.com.br/">
   <meta property="og:locale" content="pt_BR">
 
@@ -29,7 +32,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pizza Kid Taquaritinga | A Melhor Pizza da Cidade">
   <meta name="twitter:description" content="Pizza Kid Taquaritinga: rodizio, delivery, pizzas artesanais, esfihas e muito mais.">
-  <meta name="twitter:image" content="assets/imagens/fachada.jpg">
+  <meta name="twitter:image" content="https://www.pizzakidtaquaritinga.com.br/assets/imagens/fachada.jpg">
 
   <link rel="canonical" href="https://www.pizzakidtaquaritinga.com.br/">
 
@@ -51,7 +54,18 @@
     },
     "servesCuisine": "Pizza",
     "priceRange": "$$",
-    "url": "https://www.pizzakidtaquaritinga.com.br/"
+    "url": "https://www.pizzakidtaquaritinga.com.br/",
+    "sameAs": [
+      "https://www.instagram.com/pizzakidtaq"
+    ],
+    "hasMap": "https://www.google.com/maps?q=R.+Prudente+de+Moraes,+977+-+Centro,+Taquaritinga+-+SP,+15900-053",
+    "menu": "https://www.pizzakidtaquaritinga.com.br/#cardapio",
+    "acceptsReservations": false,
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "17:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:30", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "17:30", "closes": "23:30" }
+    ]
   }
   </script>
 
@@ -286,8 +300,8 @@
 
               <div class="contact-social-links">
                 <a href="https://wa.me/551632526169" target="_blank" rel="noopener" class="btn btn-primary btn-large" id="contact-whatsapp-link">Enviar Mensagem</a>
-                <a href="#" id="contact-instagram-link" target="_blank" rel="noopener" class="btn btn-secondary">Instagram</a>
-                <a href="#" id="contact-maps-link" target="_blank" rel="noopener" class="btn btn-secondary">Ver no Google Maps</a>
+                <a href="https://www.instagram.com/pizzakidtaq" id="contact-instagram-link" target="_blank" rel="noopener" class="btn btn-secondary">Instagram</a>
+                <a href="https://www.google.com/maps?q=R.+Prudente+de+Moraes,+977+-+Centro,+Taquaritinga+-+SP,+15900-053" id="contact-maps-link" target="_blank" rel="noopener" class="btn btn-secondary">Ver no Google Maps</a>
               </div>
             </div>
             <div class="contact-map" id="contactMap">
@@ -309,6 +323,7 @@
           <a href="#promocoes">Ofertas</a>
           <a href="#cardapio">Fazer Pedido</a>
           <a href="#sobre">Área Kids</a>
+          <a href="privacidade.html">Privacidade</a>
         </div>
       </div>
       <div class="footer-dev-bar">
