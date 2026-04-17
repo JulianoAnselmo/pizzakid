@@ -316,6 +316,13 @@
         openItemModal(itemData, pPizza ? "pizzas" : "promo");
       });
     });
+
+    // Re-observar os .reveal recém-criados. Sem isso, quando o Firestore
+    // chega depois do render inicial e createMenu() roda de novo, os novos
+    // itens ficam com opacity:0 até o usuário clicar numa aba.
+    if (typeof initReveal === 'function') {
+      setTimeout(initReveal, 10);
+    }
   }
 
   function findItemByNome(tabId, nome) {
