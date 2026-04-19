@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dir = path.join(__dirname, '..', 'assets', 'imagens');
-const files = ['fachada.jpg', 'pista-pizza.jpg', 'comida-boteco.jpg', 'area-kids.jpg'];
+const files = ['fachada.jpg', 'pista-pizza.jpg', 'comida-boteco.jpg'];
 
 async function process() {
   for (const f of files) {

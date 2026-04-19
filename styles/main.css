@@ -194,6 +194,30 @@ p { color: var(--text-gray); font-size: 1.1rem; }
 .kids-content p { color: var(--text-dark); font-size: 1.1rem; }
 .kids-image { flex: 1; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md); }
 .kids-image img { width: 100%; height: 280px; object-fit: cover; }
+.kids-image .carousel { border-radius: var(--radius-md); }
+.kids-image .carousel-slide { height: 320px; }
+
+/* CARROSSEL GENÉRICO */
+.carousel { position: relative; width: 100%; overflow: hidden; border-radius: var(--radius-md); background: #000; }
+.carousel-track { position: relative; width: 100%; height: 100%; }
+.carousel-slide { position: absolute; top: 0; left: 0; width: 100%; height: 420px; object-fit: cover; opacity: 0; transition: opacity 0.6s ease; pointer-events: none; }
+.carousel-slide.active { opacity: 1; pointer-events: auto; position: relative; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; width: 44px; height: 44px; border-radius: 50%; font-size: 1.8rem; line-height: 1; color: var(--text-dark); cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md); transition: background 0.2s, transform 0.2s; z-index: 2; }
+.carousel-btn:hover { background: #fff; transform: translateY(-50%) scale(1.08); }
+.carousel-prev { left: 14px; }
+.carousel-next { right: 14px; }
+.carousel-dots { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 2; }
+.carousel-dots button { width: 10px; height: 10px; border-radius: 50%; border: none; background: rgba(255,255,255,0.55); cursor: pointer; padding: 0; transition: background 0.2s, transform 0.2s; }
+.carousel-dots button.active { background: #fff; transform: scale(1.25); }
+
+/* RODÍZIO */
+.rodizio-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; }
+.rodizio-carousel .carousel-slide { height: 460px; }
+.rodizio-info { display: flex; flex-direction: column; gap: 24px; }
+.rodizio-features { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.rodizio-features li { display: flex; align-items: center; gap: 14px; font-size: 1.05rem; color: var(--text-dark); background: #fff; padding: 14px 18px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm, 0 2px 6px rgba(0,0,0,0.06)); }
+.rodizio-features li span { font-size: 1.5rem; }
+.rodizio-info .btn { align-self: flex-start; }
 
 /* CONTATO */
 .contact-box { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; display: flex; }
@@ -455,6 +479,8 @@ input:focus-visible, textarea:focus-visible {
   .kids-area-block { flex-direction: column; text-align: center; }
   .about-grid { grid-template-columns: 1fr; }
   .about-images { height: 400px; }
+  .rodizio-grid { grid-template-columns: 1fr; gap: 30px; }
+  .rodizio-info .btn { align-self: center; }
   .contact-box { flex-direction: column; }
   .contact-info, .contact-map { width: 100%; }
   .contact-map { height: 300px; }
@@ -494,4 +520,10 @@ input:focus-visible, textarea:focus-visible {
   .img-sub { height: 200px; width: 70%; }
   .modal-actions { padding: 16px; }
   .kids-image img { height: 220px; }
+  .kids-image .carousel-slide { height: 240px; }
+  .rodizio-carousel .carousel-slide { height: 300px; }
+  .carousel-slide { height: 300px; }
+  .carousel-btn { width: 38px; height: 38px; font-size: 1.4rem; }
+  .carousel-prev { left: 8px; }
+  .carousel-next { right: 8px; }
 }
