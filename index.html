@@ -41,9 +41,18 @@
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
+    "@id": "https://www.pizzakidtaquaritinga.com.br/#restaurant",
     "name": "Pizza Kid Taquaritinga",
-    "image": "assets/imagens/fachada.jpg",
+    "alternateName": "Pizza Kid",
+    "description": "Pizzaria em Taquaritinga-SP com rodízio, delivery, pizzas artesanais, esfihas, porções e Área Kids exclusiva.",
+    "image": [
+      "https://www.pizzakidtaquaritinga.com.br/assets/imagens/fachada.jpg",
+      "https://www.pizzakidtaquaritinga.com.br/assets/imagens/pista-pizza.jpg",
+      "https://www.pizzakidtaquaritinga.com.br/assets/imagens/rodizio-1.jpeg"
+    ],
+    "logo": "https://www.pizzakidtaquaritinga.com.br/assets/imagens/logo.png",
     "telephone": "+551632526169",
+    "email": "contato@pizzakidtaquaritinga.com.br",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "R. Prudente de Moraes, 977 - Centro",
@@ -52,7 +61,12 @@
       "postalCode": "15900-053",
       "addressCountry": "BR"
     },
-    "servesCuisine": "Pizza",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -21.4085,
+      "longitude": -48.5053
+    },
+    "servesCuisine": ["Pizza", "Italiana", "Brasileira"],
     "priceRange": "$$",
     "url": "https://www.pizzakidtaquaritinga.com.br/",
     "sameAs": [
@@ -61,10 +75,31 @@
     "hasMap": "https://www.google.com/maps?q=R.+Prudente+de+Moraes,+977+-+Centro,+Taquaritinga+-+SP,+15900-053",
     "menu": "https://www.pizzakidtaquaritinga.com.br/#cardapio",
     "acceptsReservations": false,
+    "paymentAccepted": ["Dinheiro", "Cartão de Crédito", "Cartão de Débito", "Pix"],
+    "currenciesAccepted": "BRL",
+    "areaServed": {
+      "@type": "City",
+      "name": "Taquaritinga"
+    },
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "17:00", "closes": "23:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:30", "closes": "23:30" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "17:30", "closes": "23:30" }
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Rodízio de Pizza",
+        "description": "Pizzas doces e salgadas à vontade, direto do forno",
+        "priceCurrency": "BRL",
+        "price": "49.90"
+      },
+      {
+        "@type": "Offer",
+        "name": "Delivery de Pizza",
+        "description": "Entrega rápida em Taquaritinga",
+        "priceCurrency": "BRL"
+      }
     ]
   }
   </script>
