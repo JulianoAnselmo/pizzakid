@@ -1,29 +1,47 @@
 var siteData = {
   promoDay: {
-    segunda: [],
-    terca: [],
-    quarta: [{ text: "Rodizio com 20% de desconto — Quarta da Pizza", highlight: true }],
-    quinta: [{ text: "Pizza grande + refrigerante gratis — Quinta Pizza" }],
-    sexta: [{ text: "Pizzas doces pela metade do preco — Sexta Doceira" }],
-    sabado: [{ text: "Rodizio + entrada especial por R$ 59,90 — Sabado Perfeito", highlight: true }],
-    domingo: [{ text: "Combo familia: 2 pizzas grandes + bebida — Domingo em Familia", highlight: true }]
+    domingo: [{ text: "Rodízio de Pizza — R$ 60 por pessoa, Coca 1L à vontade", highlight: true }],
+    segunda: [{ text: "Rodízio de Pizza — R$ 60 por pessoa, Coca 1L à vontade", highlight: true }],
+    terca: [{ text: "Terça Maluca — Pizza G por R$ 39,90 (só delivery)" }],
+    quarta: [{ text: "Quarta Maluca — Rodízio por R$ 49,90 com Coca 1L à vontade", highlight: true }],
+    quinta: [{ text: "Rodízio de Pizza — R$ 60 por pessoa, Coca 1L à vontade", highlight: true }],
+    sexta: [{ text: "Rodízio Premium — Pizzas, massas e boteco · R$ 65", highlight: true }],
+    sabado: [{ text: "Rodízio Premium — Pizzas, massas e boteco · R$ 65", highlight: true }]
   },
   infoBar: [
-    { label: "Faixa de preco", value: "R$ 40-60" },
-    { label: "Especialidade", value: "Rodizio impecavel" },
-    { label: "Ambiente", value: "Aconchego + convite visual" },
-    { label: "Destaque", value: "Pizza de verdade, delivery forte" }
+    { label: "Faixa de preco", value: "R$ 40-65" },
+    { label: "Especialidade", value: "Rodízio invertido" },
+    { label: "Ambiente", value: "Familiar + Área Kids gratuita" },
+    { label: "Destaque", value: "Aniversariante não paga" }
   ],
   features: [
     {
-      title: "Rodizio de pizzas",
-      text: "A cada rodada, uma surpresa quente saindo do forno. Do classico calabresa ao mais criativo, tudo pensado para você voltar sempre.",
-      tag: "Mais procurado",
-      icon: "🍕"
+      title: "Rodízio invertido",
+      text: "Você se serve à vontade, no seu tempo. Pizzas salgadas, pizzas doces e Coca-Cola 1L liberada em todos os dias de rodízio.",
+      tag: "Exclusivo",
+      icon: "🔄"
+    },
+    {
+      title: "Comida de boteco + massas",
+      text: "Nas sextas, sábados e feriados o rodízio vem turbinado: porções de boteco, lasanha, rondeli e canelone inclusos.",
+      tag: "Sex · Sáb · Feriados",
+      icon: "🍝"
+    },
+    {
+      title: "Área Kids gratuita",
+      text: "Espaço separado com monitora, câmeras, fraldário e ar-condicionado. 100% grátis para os clientes do salão.",
+      tag: "Família",
+      icon: "🧸"
+    },
+    {
+      title: "Aniversariante não paga",
+      text: "No dia do seu aniversário você come de graça. Basta apresentar o RG e trazer 3 pagantes (inteira).",
+      tag: "Promoção",
+      icon: "🎂"
     },
     {
       title: "Pizzas doces e salgadas",
-      text: "Chocolate derretido, frutas frescas, sabores que fecham a noite com perfeicao. Pizza nao e so comida, e experiencia.",
+      text: "Chocolate derretido, frutas frescas, sabores que fecham a noite com perfeição. Pizza não é só comida, é experiência.",
       tag: "Para todos",
       icon: "🍫"
     },
@@ -35,8 +53,8 @@ var siteData = {
     },
     {
       title: "Esfihas salgadas e doces",
-      text: "Massa leve que derrete na boca, recheios intensos. Perfeita para entrada, acompanhamento ou quando bate aquela fome de nada especifico.",
-      tag: "Versatil",
+      text: "Massa leve que derrete na boca, recheios intensos. Perfeita para entrada, acompanhamento ou quando bate aquela fome de nada específico.",
+      tag: "Versátil",
       icon: "📦"
     },
     {
@@ -107,7 +125,7 @@ var siteData = {
     },
     {
       label: "Horario",
-      value: "Seg 17h-23h | Ter-Sab 17h30-23h30 | Dom 17h30-23h30"
+      value: "Delivery todos os dias 18h30-23h30 · Salão exceto terça"
     }
   ]
 };
@@ -130,20 +148,21 @@ var businessInfoData = {
   googleMapsLink: "https://www.google.com/maps?q=R.+Prudente+de+Moraes,+977+-+Centro,+Taquaritinga+-+SP,+15900-053",
   googleMapsEmbed: "https://www.google.com/maps?q=R.%20Prudente%20de%20Moraes,%20977%20-%20Centro,%20Taquaritinga%20-%20SP,%2015900-053&output=embed",
   hours: {
-    funcionamento: "Segunda a Domingo",
-    jantar: "17h00 às 23h30",
+    funcionamento: "Todos os dias",
+    jantar: "18h30 às 23h30",
     almoco: "",
-    completo: "Seg 17h-23h | Ter-Sab 17h30-23h30 | Dom 17h30-23h30"
+    completo: "Dom 18h30-23h30 | Seg 18h30-23h30 | Ter 18h30-23h30 | Qua 18h30-23h30 | Qui 18h30-23h30 | Sex 18h30-23h30 | Sab 18h30-23h30",
+    display: "<span class=\"hours-line\"><strong>Delivery:</strong> todos os dias, 18h30 às 23h30</span><br><span class=\"hours-line\"><strong>Salão:</strong> todos os dias exceto terça, 18h30 às 23h30</span>"
   }
 };
 
 // Fallback para promocoes (formato cardapio-admin)
 var promocoesData = {
-  domingo: [],
-  segunda: [],
-  terca:   [{ texto: "TERÇA MALUCA — Pizza G por R$ 39,90", destaque: true }],
-  quarta:  [{ texto: "QUARTA MALUCA — Rodízio por R$ 49,90", destaque: true }],
-  quinta:  [],
-  sexta:   [{ texto: "Rodízio Premium + Coca à vontade — R$ 65 por pessoa", destaque: true }],
-  sabado:  [{ texto: "Rodízio Premium + Coca à vontade — R$ 65 por pessoa", destaque: true }]
+  domingo: [{ texto: "RODÍZIO DE PIZZA — R$ 60 por pessoa com Coca 1L à vontade", destaque: true }],
+  segunda: [{ texto: "RODÍZIO DE PIZZA — R$ 60 por pessoa com Coca 1L à vontade", destaque: true }],
+  terca:   [{ texto: "TERÇA MALUCA — Pizza G por R$ 39,90 (só delivery, salão fechado)", destaque: true }],
+  quarta:  [{ texto: "QUARTA MALUCA — Rodízio por R$ 49,90 com Coca 1L à vontade", destaque: true }],
+  quinta:  [{ texto: "RODÍZIO DE PIZZA — R$ 60 por pessoa com Coca 1L à vontade", destaque: true }],
+  sexta:   [{ texto: "RODÍZIO PREMIUM — Pizzas, massas e boteco · R$ 65 por pessoa", destaque: true }],
+  sabado:  [{ texto: "RODÍZIO PREMIUM — Pizzas, massas e boteco · R$ 65 por pessoa", destaque: true }]
 };

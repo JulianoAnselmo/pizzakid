@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizza Kid Taquaritinga | A Melhor Pizza da Cidade</title>
-  <meta name="description" content="Pizza Kid Taquaritinga: rodízio, delivery, pizzas artesanais, esfihas e muito mais. Área Kids exclusiva!">
+  <meta name="description" content="Pizza Kid Taquaritinga: rodízio invertido, delivery todos os dias, comida de boteco e Área Kids totalmente gratuita com monitora.">
   <meta name="theme-color" content="#E62525">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -24,7 +24,7 @@
   <!-- SEO: Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pizza Kid Taquaritinga | A Melhor Pizza da Cidade">
-  <meta property="og:description" content="Pizza Kid Taquaritinga: rodizio, delivery, pizzas artesanais, esfihas e muito mais. Area Kids exclusiva!">
+  <meta property="og:description" content="Pizza Kid Taquaritinga: rodízio invertido, delivery todos os dias, comida de boteco e Área Kids gratuita com monitora.">
   <meta property="og:image" content="https://www.pizzakidtaquaritinga.com.br/assets/imagens/fachada.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
   <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pizza Kid Taquaritinga | A Melhor Pizza da Cidade">
-  <meta name="twitter:description" content="Pizza Kid Taquaritinga: rodizio, delivery, pizzas artesanais, esfihas e muito mais.">
+  <meta name="twitter:description" content="Pizza Kid Taquaritinga: rodízio invertido, delivery todos os dias e Área Kids gratuita.">
   <meta name="twitter:image" content="https://www.pizzakidtaquaritinga.com.br/assets/imagens/fachada.jpg">
 
   <link rel="canonical" href="https://www.pizzakidtaquaritinga.com.br/">
@@ -85,22 +85,35 @@
       "name": "Taquaritinga"
     },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "17:00", "closes": "23:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:30", "closes": "23:30" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "17:30", "closes": "23:30" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:30", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:30", "closes": "23:30", "description": "Apenas delivery - salão fechado às terças" }
     ],
     "makesOffer": [
       {
         "@type": "Offer",
-        "name": "Rodízio de Pizza",
-        "description": "Pizzas doces e salgadas à vontade, direto do forno",
+        "name": "Rodízio de Pizza - Dom, Seg e Qui",
+        "description": "Pizzas salgadas e doces à vontade com refrigerante Coca-Cola 1L incluso",
+        "priceCurrency": "BRL",
+        "price": "60.00"
+      },
+      {
+        "@type": "Offer",
+        "name": "Rodízio Premium - Sex, Sáb e Feriados",
+        "description": "Rodízio de pizzas, comida de boteco e massas (lasanha, rondeli e canelone) com Coca-Cola 1L à vontade",
+        "priceCurrency": "BRL",
+        "price": "65.00"
+      },
+      {
+        "@type": "Offer",
+        "name": "Quarta Maluca - Rodízio",
+        "description": "Rodízio completo de pizzas doces e salgadas com Coca-Cola 1L à vontade",
         "priceCurrency": "BRL",
         "price": "49.90"
       },
       {
         "@type": "Offer",
         "name": "Delivery de Pizza",
-        "description": "Entrega rápida em Taquaritinga",
+        "description": "Entrega rápida em Taquaritinga todos os dias das 18h30 às 23h30",
         "priceCurrency": "BRL"
       }
     ]
@@ -170,10 +183,10 @@
             <div class="image-showcase">
               <img src="assets/imagens/fachada.jpg" alt="Fachada da Pizza Kid Taquaritinga">
               <div class="floating-card">
-                <div class="icon">🔥</div>
+                <div class="icon">🍕</div>
                 <div>
-                  <strong>Forno Perfeito</strong>
-                  <span>Massa sempre crocante!</span>
+                  <strong>Massa Artesanal</strong>
+                  <span>Sempre fresca e crocante!</span>
                 </div>
               </div>
             </div>
@@ -190,14 +203,33 @@
           </div>
           
           <div class="promo-grid">
+            <div class="promo-card reveal" data-days="domingo segunda quinta">
+              <div class="promo-tag tag-gold" data-tag-label="Dom · Seg · Qui">Dom · Seg · Qui</div>
+              <div class="promo-content">
+                <h3>RODÍZIO DE PIZZA 🍕</h3>
+                <p>Pizzas salgadas e doces à vontade, no modelo invertido.</p>
+                <ul>
+                  <li>🔄 Rodízio invertido: você se serve</li>
+                  <li class="li-coca">🥤 Coca-Cola 1L à vontade</li>
+                </ul>
+              </div>
+              <div class="promo-footer">
+                <div class="promo-price-box">
+                  <span>Por pessoa</span>
+                  <strong>R$ 60,00</strong>
+                </div>
+                <button class="btn btn-primary btn-promo" data-name="Promo: Rodízio Dom/Seg/Qui" data-price="60.00" data-ispizza="false">Pedir</button>
+              </div>
+            </div>
+
             <div class="promo-card reveal" data-days="terca">
               <div class="promo-tag" data-tag-label="Terça">Terça</div>
               <div class="promo-content">
                 <h3>TERÇA MALUCA 🔥</h3>
-                <p>Hoje é dia de promoção daquelas que todo mundo ama!</p>
+                <p>Só no delivery — salão fechado às terças.</p>
                 <ul>
                   <li>🎉 Pizza redonda grande</li>
-                  <li>🍕 Vários sabores</li>
+                  <li>🛵 Entrega em Taquaritinga</li>
                 </ul>
               </div>
               <div class="promo-footer">
@@ -205,7 +237,7 @@
                   <span>Por apenas</span>
                   <strong>R$ 39,90</strong>
                 </div>
-                <button class="btn btn-primary btn-promo" data-name="Promo: Terça Maluca (Pizza G)" data-price="39.90" data-ispizza="true">Pedir</button>
+                <button class="btn btn-primary btn-promo" data-name="Promo: Terça Maluca (Pizza G - Delivery)" data-price="39.90" data-ispizza="true">Pedir</button>
               </div>
             </div>
 
@@ -215,8 +247,9 @@
                 <h3>QUARTA MALUCA 🍕</h3>
                 <p>O meio da semana pede uma pizza de qualidade à vontade.</p>
                 <ul>
-                  <li>✅ Rodízio completo</li>
+                  <li>✅ Rodízio completo (invertido)</li>
                   <li>✅ Pizzas doces e salgadas</li>
+                  <li class="li-coca">🥤 Coca-Cola 1L à vontade</li>
                 </ul>
               </div>
               <div class="promo-footer">
@@ -229,13 +262,15 @@
             </div>
 
             <div class="promo-card reveal" data-days="sexta sabado">
-              <div class="promo-tag tag-dark" data-tag-label="Sex &amp; Sab">Sex &amp; Sáb</div>
+              <div class="promo-tag tag-dark" data-tag-label="Sex &amp; Sab">Sex · Sáb · Feriados</div>
               <div class="promo-content">
-                <h3>SEXTA, SÁB E FERIADOS</h3>
+                <h3>RODÍZIO PREMIUM</h3>
                 <p>A combinação perfeita para aproveitar com quem você ama.</p>
                 <ul>
-                  <li>🥤 Coca-Cola à vontade!</li>
-                  <li>🍕 Rodízio Premium</li>
+                  <li>🍕 Rodízio invertido de pizzas</li>
+                  <li>🍝 Massas: lasanha, rondeli e canelone</li>
+                  <li>🍢 Comida de boteco</li>
+                  <li class="li-coca">🥤 Coca-Cola 1L à vontade</li>
                 </ul>
               </div>
               <div class="promo-footer">
@@ -243,29 +278,33 @@
                   <span>Por pessoa</span>
                   <strong>R$ 65,00</strong>
                 </div>
-                <button class="btn btn-primary btn-promo" data-name="Promo: Rodízio Fim de Semana" data-price="65.00" data-ispizza="false">Pedir</button>
+                <button class="btn btn-primary btn-promo" data-name="Promo: Rodízio Premium Fim de Semana" data-price="65.00" data-ispizza="false">Pedir</button>
               </div>
             </div>
 
-            <div class="promo-card reveal reveal-delay" data-days="todos">
-              <div class="promo-tag tag-gold">Todos os dias</div>
-              <div class="promo-content">
-                <h3>COMBO DELÍCIA ✨</h3>
-                <p>Garanta o jantar de hoje com qualidade e sabor de verdade!</p>
-                <ul>
-                  <li>🍕 1 Pizza G (Mussarela, Calabresa, Marguerita e mais)</li>
-                  <li>🥤 1 Guaraná Devito 2L</li>
-                </ul>
+          </div>
+
+          <!-- BANNER ANIVERSARIANTE -->
+          <div class="birthday-banner reveal">
+            <div class="birthday-banner-emoji" aria-hidden="true">🎂</div>
+            <div class="birthday-banner-content">
+              <span class="birthday-banner-tag">Todo dia do ano</span>
+              <h3>Aniversariante do dia<br><strong>não paga!</strong></h3>
+              <ul class="birthday-banner-rules">
+                <li><span>🪪</span> Apresente o RG na chegada</li>
+                <li><span>👥</span> Traga 3 ou mais acompanhantes (pagantes inteira)</li>
+                <li><span>🎉</span> Válido apenas no dia do aniversário</li>
+              </ul>
+            </div>
+            <div class="birthday-banner-cta">
+              <div class="birthday-price">
+                <span>Para o aniversariante</span>
+                <strong>GRÁTIS</strong>
               </div>
-              <div class="promo-footer">
-                <div class="promo-price-box">
-                  <span>Por apenas</span>
-                  <strong>R$ 55,90</strong>
-                </div>
-                <button class="btn btn-primary btn-promo" data-name="Combo: Pizza G + Guaraná 2L" data-price="55.90" data-ispizza="true">Pedir</button>
-              </div>
+              <a class="btn btn-birthday" href="#contato">Quero comemorar aqui</a>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -275,7 +314,7 @@
           <div class="section-header reveal text-center">
             <span class="subtitle">À Vontade</span>
             <h2>Rodízio Pizza Kid</h2>
-            <p>Pizzas saindo do forno sem parar, sabores doces e salgados, refrigerante à vontade e o melhor: aquele clima de família que você só encontra aqui.</p>
+            <p>Rodízio invertido: você se serve à vontade, no seu tempo. Pizzas salgadas, doces e Coca-Cola 1L liberada. Nos fins de semana e feriados, ainda tem comida de boteco e massas (lasanha, rondeli e canelone).</p>
           </div>
 
           <div class="rodizio-grid reveal">
@@ -297,10 +336,12 @@
 
             <div class="rodizio-info">
               <ul class="rodizio-features">
+                <li><span>🔄</span> Rodízio invertido: você se serve à vontade</li>
                 <li><span>🍕</span> Pizzas salgadas e doces sem parar</li>
-                <li><span>🥤</span> Refrigerante Coca-Cola à vontade (sex, sáb e feriados)</li>
-                <li><span>👨‍🍳</span> Sabores artesanais direto do forno a lenha</li>
-                <li><span>👨‍👩‍👧</span> Ambiente familiar com Área Kids exclusiva</li>
+                <li><span>🥤</span> Coca-Cola 1L à vontade em todos os dias de rodízio</li>
+                <li><span>🍝</span> Comida de boteco e massas (sex, sáb e feriados)</li>
+                <li><span>👨‍👩‍👧</span> Ambiente familiar com Área Kids gratuita</li>
+                <li><span>💰</span> Dom, Seg e Qui: R$ 60 · Sex, Sáb e Feriados: R$ 65</li>
               </ul>
               <a class="btn btn-primary btn-large" href="#contato">Garanta seu lugar</a>
             </div>
@@ -351,8 +392,8 @@
 
           <div class="kids-area-block reveal">
             <div class="kids-content">
-              <h3>🧸 Área Kids Exclusiva</h3>
-              <p>Pensando no conforto de toda a família, criamos um espaço <strong>totalmente separado da pizzaria</strong>. As crianças brincam com segurança e muita diversão enquanto você relaxa, janta e aproveita a noite com tranquilidade.</p>
+              <h3>🧸 Área Kids Exclusiva e Gratuita</h3>
+              <p><strong>100% gratuita</strong> e totalmente separada do salão. Contamos com <strong>monitora</strong> acompanhando as crianças, <strong>câmeras de segurança</strong>, <strong>fraldário</strong> e ambiente <strong>climatizado</strong>. Seus filhos se divertem em segurança enquanto você aproveita o jantar com tranquilidade.</p>
             </div>
             <div class="kids-image">
               <div class="carousel" data-autoplay="5000" aria-roledescription="carrossel" aria-label="Fotos da Área Kids">
@@ -382,7 +423,10 @@
 
               <div class="contact-hours">
                 <strong>Horário de Funcionamento:</strong>
-                <span id="contact-hours">Seg 17h-23h | Ter-Sab 17h30-23h30 | Dom 17h30-23h30</span>
+                <span id="contact-hours">
+                  <span class="hours-line"><strong>Delivery:</strong> todos os dias, 18h30 às 23h30</span><br>
+                  <span class="hours-line"><strong>Salão:</strong> todos os dias (exceto terça), 18h30 às 23h30</span>
+                </span>
               </div>
               
               <a href="tel:+551632526169" id="contact-phone" class="contact-phone-link">(16) 3252-6169</a>
@@ -406,7 +450,7 @@
       <div class="container footer-content">
         <div class="footer-brand">
           <img src="assets/imagens/logo.png" alt="Logo Pizza Kid">
-          <p>O sabor que reúne quem você gosta.</p>
+          <p>Orgulho de ser a melhor.</p>
         </div>
         <div class="footer-links">
           <a href="#promocoes">Ofertas</a>

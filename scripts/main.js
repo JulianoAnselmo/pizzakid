@@ -1039,7 +1039,11 @@
 
     var contactHours = document.getElementById('contact-hours');
     if (contactHours && info.hours) {
-      contactHours.textContent = info.hours.completo || info.hours.funcionamento || '';
+      if (info.hours.display) {
+        contactHours.innerHTML = info.hours.display;
+      } else {
+        contactHours.textContent = info.hours.completo || info.hours.funcionamento || '';
+      }
     }
 
     var contactWa = document.getElementById('contact-whatsapp-link');
