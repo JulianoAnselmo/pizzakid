@@ -228,8 +228,14 @@
 
     extractAllPizzas();
 
-    // Tab ativa: "promocao-do-dia" se existir, senao primeira aba
-    var activeTabId = activeTabs.length > 0 ? activeTabs[0].id : null;
+    // Tab ativa: primeira aba que tenha pelo menos um item ativo
+    function tabTemItens(tab) {
+      return (tab.categorias || []).some(function(cat) {
+        return cat.ativo !== false && (cat.itens || []).some(function(item) { return item.ativo !== false; });
+      });
+    }
+    var primeiraComItens = activeTabs.filter(tabTemItens)[0];
+    var activeTabId = primeiraComItens ? primeiraComItens.id : (activeTabs.length > 0 ? activeTabs[0].id : null);
 
     tabs.innerHTML = activeTabs.map(function (section) {
       var isPromo = section.id && section.id.indexOf('promocao') !== -1;
