@@ -468,7 +468,7 @@ window.menuData = [
             "nome": "PIZZA ALICHE",
             "desc": "Ingredientes: Aliche, Azeitona Preta, Cebola, Molho a Parte, Orégano, Tomate",
             "preco": 70,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/26.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/26.webp",
             "ativo": true,
             "tags": []
           },
@@ -484,7 +484,7 @@ window.menuData = [
             "nome": "PIZZA ATUM REDONDA G",
             "desc": "Ingredientes: Atum, Azeitona Preta, Cebola, Molho a Parte, Molho a Parte, Orégano, Tomate",
             "preco": 70,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/5.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/5.webp",
             "ativo": true,
             "tags": []
           },
@@ -572,7 +572,7 @@ window.menuData = [
             "nome": "PIZZA ESTROGONOFF DE CARNE",
             "desc": "Ingredientes: Batata Palha, Molho a Parte, Mussarela, Orégano, Strogonoff de Carne",
             "preco": 70,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/8.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/8.webp",
             "ativo": true,
             "tags": []
           },
@@ -580,7 +580,7 @@ window.menuData = [
             "nome": "PIZZA ESTROGONOFF DE FRANGO",
             "desc": "Ingredientes: Batata Palha, Molho a Parte, Mussarela, Orégano, Strogonoff de Frango",
             "preco": 70,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/9.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/9.webp",
             "ativo": true,
             "tags": []
           },
@@ -636,7 +636,7 @@ window.menuData = [
             "nome": "PIZZA PALMITO",
             "desc": "Ingredientes: Molho a Parte, Mussarela, Orégano, Palmito, Requeijão",
             "preco": 70,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/11.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/11.webp",
             "ativo": true,
             "tags": []
           },
@@ -652,7 +652,7 @@ window.menuData = [
             "nome": "PIZZA PEITO DE PERU G",
             "desc": "Ingredientes: Azeitona Preta, Catupiry, Molho a Parte, Mussarela, Orégano, Peito de Peru",
             "preco": 70,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/18.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/18.webp",
             "ativo": true,
             "tags": []
           },
@@ -660,7 +660,7 @@ window.menuData = [
             "nome": "PIZZA PORTUGUESA",
             "desc": "Ingredientes: Azeitona, Catupiry, Cebola, Ervilha, Milho, Mussarela, Orégano, Ovo, Palmito, Presunto, Tomate",
             "preco": 70,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/30.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/30.webp",
             "ativo": true,
             "tags": []
           },
@@ -1089,7 +1089,7 @@ window.menuData = [
             "nome": "PIZZA ABACAXI",
             "desc": "",
             "preco": 65,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/32.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/32.webp",
             "ativo": true,
             "tags": []
           },
@@ -1105,7 +1105,7 @@ window.menuData = [
             "nome": "PIZZA BRIGADEIRO",
             "desc": "",
             "preco": 65,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/33.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/33.webp",
             "ativo": true,
             "tags": []
           },
@@ -1383,7 +1383,7 @@ window.menuData = [
             "nome": "ESFIHA ALICHE",
             "desc": "",
             "preco": 11.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/179.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/179.webp",
             "ativo": true,
             "tags": []
           },
@@ -1391,7 +1391,7 @@ window.menuData = [
             "nome": "ESFIHA AMERICANA",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/182.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/182.webp",
             "ativo": true,
             "tags": []
           },
@@ -1399,7 +1399,7 @@ window.menuData = [
             "nome": "ESFIHA ATUM",
             "desc": "",
             "preco": 11.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/183.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/183.webp",
             "ativo": true,
             "tags": []
           },
@@ -1439,7 +1439,7 @@ window.menuData = [
             "nome": "ESFIHA BROCOLIS",
             "desc": "",
             "preco": 11.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/85.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/85.webp",
             "ativo": true,
             "tags": []
           },
@@ -1455,7 +1455,7 @@ window.menuData = [
             "nome": "ESFIHA CALABRESA",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/78.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/78.webp",
             "ativo": true,
             "tags": []
           },
@@ -1463,7 +1463,7 @@ window.menuData = [
             "nome": "ESFIHA CAMARAO",
             "desc": "",
             "preco": 11.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/87.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/87.webp",
             "ativo": true,
             "tags": []
           },
@@ -1471,7 +1471,7 @@ window.menuData = [
             "nome": "ESFIHA CARNE",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/75.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/75.webp",
             "ativo": true,
             "tags": []
           },
@@ -1479,7 +1479,7 @@ window.menuData = [
             "nome": "ESFIHA CARNE SECA",
             "desc": "",
             "preco": 11.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/86.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/86.webp",
             "ativo": true,
             "tags": []
           },
@@ -1487,7 +1487,7 @@ window.menuData = [
             "nome": "ESFIHA CATUPIRY E MILHO",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/79.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/79.webp",
             "ativo": true,
             "tags": []
           },
@@ -1511,7 +1511,7 @@ window.menuData = [
             "nome": "ESFIHA ESCAROLA",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/84.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/84.webp",
             "ativo": true,
             "tags": []
           },
@@ -1527,7 +1527,7 @@ window.menuData = [
             "nome": "ESFIHA ESTROGONOF FRANGO",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/203.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/203.webp",
             "ativo": true,
             "tags": []
           },
@@ -1543,7 +1543,7 @@ window.menuData = [
             "nome": "ESFIHA FRANGO COM REQUEIJÃO",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/82.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/82.webp",
             "ativo": true,
             "tags": []
           },
@@ -1551,7 +1551,7 @@ window.menuData = [
             "nome": "ESFIHA LOMBO",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/80.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/80.webp",
             "ativo": true,
             "tags": []
           },
@@ -1559,7 +1559,7 @@ window.menuData = [
             "nome": "ESFIHA MARGUERITA",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/201.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/201.webp",
             "ativo": true,
             "tags": []
           },
@@ -1575,7 +1575,7 @@ window.menuData = [
             "nome": "ESFIHA MUSSARELA",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/76.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/76.webp",
             "ativo": true,
             "tags": []
           },
@@ -1583,7 +1583,7 @@ window.menuData = [
             "nome": "ESFIHA NAPOLITANA",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/204.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/204.webp",
             "ativo": true,
             "tags": []
           },
@@ -1599,7 +1599,7 @@ window.menuData = [
             "nome": "ESFIHA PEITO DE PERU",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/180.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/180.webp",
             "ativo": true,
             "tags": []
           },
@@ -1615,7 +1615,7 @@ window.menuData = [
             "nome": "ESFIHA PORTUGUESA",
             "desc": "",
             "preco": 11.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/181.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/181.webp",
             "ativo": true,
             "tags": []
           },
@@ -1623,7 +1623,7 @@ window.menuData = [
             "nome": "ESFIHA PRESUNTO E MUSSARELA",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/77.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/77.webp",
             "ativo": true,
             "tags": []
           },
@@ -1662,7 +1662,7 @@ window.menuData = [
             "nome": "ESFIHA ABACAXI",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/178.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/178.webp",
             "ativo": true,
             "tags": []
           },
@@ -1670,7 +1670,7 @@ window.menuData = [
             "nome": "ESFIHA BANANA",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/91.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/91.webp",
             "ativo": true,
             "tags": []
           },
@@ -1686,7 +1686,7 @@ window.menuData = [
             "nome": "ESFIHA BRIGADEIRO",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/89.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/89.webp",
             "ativo": true,
             "tags": []
           },
@@ -1694,7 +1694,7 @@ window.menuData = [
             "nome": "ESFIHA CONFETE",
             "desc": "",
             "preco": 10.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/205.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/205.webp",
             "ativo": true,
             "tags": []
           },
@@ -1710,7 +1710,7 @@ window.menuData = [
             "nome": "ESFIHA PRESTIGIO",
             "desc": "",
             "preco": 9.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/177.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/177.webp",
             "ativo": true,
             "tags": []
           },
@@ -1741,7 +1741,7 @@ window.menuData = [
             "nome": "DEL VALLE 1LT UVA",
             "desc": "",
             "preco": 15.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/578.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/578.webp",
             "ativo": true,
             "tags": []
           },
@@ -1749,7 +1749,7 @@ window.menuData = [
             "nome": "SUCO DEL VALLE 1LT GOIABA",
             "desc": "",
             "preco": 15.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/745.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/745.webp",
             "ativo": true,
             "tags": []
           },
@@ -1757,7 +1757,7 @@ window.menuData = [
             "nome": "SUCO DEL VALLE 1LT MARACUJÁ",
             "desc": "",
             "preco": 15.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/743.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/743.webp",
             "ativo": true,
             "tags": []
           },
@@ -1765,7 +1765,7 @@ window.menuData = [
             "nome": "SUCO DEL VALLE 1LT PESSEGO",
             "desc": "",
             "preco": 15.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/744.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/744.webp",
             "ativo": true,
             "tags": []
           },
@@ -1789,7 +1789,7 @@ window.menuData = [
             "nome": "SUCO DEL VALLE LATA MARACUJA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/718.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/718.webp",
             "ativo": true,
             "tags": []
           },
@@ -1797,7 +1797,7 @@ window.menuData = [
             "nome": "SUCO DEL VALLE LATA PESSEGO",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/716.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/716.webp",
             "ativo": true,
             "tags": []
           },
@@ -1813,7 +1813,7 @@ window.menuData = [
             "nome": "SUCO LARANJA KMAIS",
             "desc": "",
             "preco": 15.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/530.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/530.webp",
             "ativo": true,
             "tags": []
           }
@@ -1836,7 +1836,7 @@ window.menuData = [
             "nome": "COCA COLA LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/362.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/362.webp",
             "ativo": true,
             "tags": []
           },
@@ -1844,7 +1844,7 @@ window.menuData = [
             "nome": "FANTA LATA GUARANA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/122.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/122.webp",
             "ativo": true,
             "tags": []
           },
@@ -1852,7 +1852,7 @@ window.menuData = [
             "nome": "GUARANA LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/123.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/123.webp",
             "ativo": true,
             "tags": []
           },
@@ -1860,7 +1860,7 @@ window.menuData = [
             "nome": "SPRITE LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/125.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/125.webp",
             "ativo": true,
             "tags": []
           },
@@ -1868,7 +1868,7 @@ window.menuData = [
             "nome": "TONICA LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/207.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/207.webp",
             "ativo": true,
             "tags": []
           },
@@ -1876,7 +1876,7 @@ window.menuData = [
             "nome": "CITRUS LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/206.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/206.webp",
             "ativo": true,
             "tags": []
           },
@@ -1884,7 +1884,7 @@ window.menuData = [
             "nome": "COCA 2 LITROS",
             "desc": "",
             "preco": 16,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/337.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/337.webp",
             "ativo": true,
             "tags": []
           },
@@ -1892,7 +1892,7 @@ window.menuData = [
             "nome": "FANTA 2 LITROS",
             "desc": "",
             "preco": 16,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/198.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/198.webp",
             "ativo": true,
             "tags": []
           },
@@ -1908,7 +1908,7 @@ window.menuData = [
             "nome": "SPRIT 2 LITROS",
             "desc": "",
             "preco": 16,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/413.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/413.webp",
             "ativo": true,
             "tags": []
           },
@@ -1916,7 +1916,7 @@ window.menuData = [
             "nome": "RED BULL",
             "desc": "",
             "preco": 15,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/731.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/731.webp",
             "ativo": true,
             "tags": []
           },
@@ -1924,7 +1924,7 @@ window.menuData = [
             "nome": "H2O",
             "desc": "",
             "preco": 8,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/360.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/360.webp",
             "ativo": true,
             "tags": []
           },
@@ -1932,7 +1932,7 @@ window.menuData = [
             "nome": "AGUA COM GAS",
             "desc": "",
             "preco": 5,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/115.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/115.webp",
             "ativo": true,
             "tags": []
           },
@@ -1940,7 +1940,7 @@ window.menuData = [
             "nome": "AGUA SEM GAS",
             "desc": "",
             "preco": 5,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/114.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/114.webp",
             "ativo": true,
             "tags": []
           },
@@ -1996,7 +1996,7 @@ window.menuData = [
             "nome": "FANTA LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/750.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/750.webp",
             "ativo": true,
             "tags": []
           },
@@ -2004,7 +2004,7 @@ window.menuData = [
             "nome": "FANTA LATA UVA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/751.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/751.webp",
             "ativo": true,
             "tags": []
           },
@@ -2012,7 +2012,7 @@ window.menuData = [
             "nome": "ICE BALADA",
             "desc": "",
             "preco": 8.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/755.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/755.webp",
             "ativo": true,
             "tags": []
           },
@@ -2020,7 +2020,7 @@ window.menuData = [
             "nome": "ICE FRUIT MIX",
             "desc": "ICE FRUIT MIX",
             "preco": 8.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/752.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/752.webp",
             "ativo": true,
             "tags": []
           },
@@ -2028,7 +2028,7 @@ window.menuData = [
             "nome": "ICE KIWI",
             "desc": "",
             "preco": 8.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/749.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/749.webp",
             "ativo": true,
             "tags": []
           },
@@ -2036,7 +2036,7 @@ window.menuData = [
             "nome": "ICE LIMÃO",
             "desc": "",
             "preco": 8.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/754.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/754.webp",
             "ativo": true,
             "tags": []
           },
@@ -2044,7 +2044,7 @@ window.menuData = [
             "nome": "ICE MARACUJA",
             "desc": "",
             "preco": 8.9,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/753.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/753.webp",
             "ativo": true,
             "tags": []
           }
@@ -2067,7 +2067,7 @@ window.menuData = [
             "nome": "BRAHMA MALZBIER LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/736.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/736.webp",
             "ativo": true,
             "tags": []
           },
@@ -2075,7 +2075,7 @@ window.menuData = [
             "nome": "BRAHMA LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/398.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/398.webp",
             "ativo": true,
             "tags": []
           },
@@ -2083,7 +2083,7 @@ window.menuData = [
             "nome": "ANTARTICA LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/746.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/746.webp",
             "ativo": true,
             "tags": []
           },
@@ -2091,7 +2091,7 @@ window.menuData = [
             "nome": "BRAHMA SEM ALCOOL LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/735.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/735.webp",
             "ativo": true,
             "tags": []
           },
@@ -2099,7 +2099,7 @@ window.menuData = [
             "nome": "SKOL LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/399.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/399.webp",
             "ativo": true,
             "tags": []
           },
@@ -2107,7 +2107,7 @@ window.menuData = [
             "nome": "SUB ZERO LATA",
             "desc": "",
             "preco": 6,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/400.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/400.webp",
             "ativo": true,
             "tags": []
           },
@@ -2115,7 +2115,7 @@ window.menuData = [
             "nome": "BOA GARRAFA",
             "desc": "",
             "preco": 14,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/563.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/563.webp",
             "ativo": true,
             "tags": []
           },
@@ -2139,7 +2139,7 @@ window.menuData = [
             "nome": "HEINEKEN GARRAFA",
             "desc": "",
             "preco": 18,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/599.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/599.webp",
             "ativo": true,
             "tags": []
           },
@@ -2147,7 +2147,7 @@ window.menuData = [
             "nome": "ORIGINAL GARRAFA",
             "desc": "",
             "preco": 16,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/564.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/564.webp",
             "ativo": true,
             "tags": []
           },
@@ -2194,7 +2194,7 @@ window.menuData = [
             "nome": "VINHO CHALISE",
             "desc": "",
             "preco": 30,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/419.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/419.webp",
             "ativo": true,
             "tags": []
           },
@@ -2202,7 +2202,7 @@ window.menuData = [
             "nome": "VINHO GIROLA",
             "desc": "",
             "preco": 30,
-            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/742.png",
+            "imagem": "https://ajx.nyc3.digitaloceanspaces.com/appscatalog/112/prods/742.webp",
             "ativo": true,
             "tags": []
           }

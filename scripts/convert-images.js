@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dir = path.join(__dirname, '..', 'assets', 'imagens');
-const files = ['fachada.jpg', 'pista-pizza.jpg', 'comida-boteco.jpg'];
+const files = ['fachada.webp', 'pista-pizza.webp', 'comida-boteco.webp'];
 
 async function process() {
   for (const f of files) {
@@ -38,17 +38,17 @@ async function process() {
   }
 
   // Gera ícones PWA a partir do logo
-  const logo = path.join(dir, 'logo.png');
+  const logo = path.join(dir, 'logo.webp');
   if (fs.existsSync(logo)) {
     await sharp(logo)
       .resize(192, 192, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
       .png()
-      .toFile(path.join(dir, 'logo-192.png'));
+      .toFile(path.join(dir, 'logo-192.webp'));
     await sharp(logo)
       .resize(512, 512, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
       .png()
-      .toFile(path.join(dir, 'logo-512.png'));
-    console.log('Ícones PWA gerados: logo-192.png, logo-512.png');
+      .toFile(path.join(dir, 'logo-512.webp'));
+    console.log('Ícones PWA gerados: logo-192.png, logo-512.webp');
   }
 }
 
