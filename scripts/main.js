@@ -1300,6 +1300,23 @@
     });
   }
 
+  // Render do feed do Instagram (alimentado pelo cardapio-admin via Firestore)
+  window.renderInstagramGrid = function(posts) {
+    var grid = document.getElementById('instagramGrid');
+    if (!grid || !Array.isArray(posts) || !posts.length) return;
+    var html = '';
+    posts.slice(0, 9).forEach(function(post) {
+      var img = post.image || post.imageUrl || '';
+      var url = post.postUrl || '#';
+      var alt = (post.alt || 'Post @pizzakidtaq').replace(/"/g, '&quot;');
+      if (!img) return;
+      html += '<a href="' + url + '" target="_blank" rel="noopener" aria-label="Abrir post no Instagram">';
+      html += '<img src="' + img + '" alt="' + alt + '" loading="lazy">';
+      html += '</a>';
+    });
+    grid.innerHTML = html;
+  };
+
   // Aplicar businessInfo local como fallback
   if (window.businessInfoData) {
     window.aplicarBusinessInfo(window.businessInfoData);

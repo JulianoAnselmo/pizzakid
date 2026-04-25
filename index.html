@@ -415,6 +415,27 @@
         </div>
       </section>
 
+      <!-- INSTAGRAM FEED -->
+      <section class="instagram-feed section" id="instagram" aria-label="Feed do Instagram">
+        <div class="container">
+          <div class="section-header reveal" style="text-align:center;">
+            <span class="subtitle">@pizzakidtaq</span>
+            <h2>No Instagram</h2>
+          </div>
+          <div id="instagramGrid" class="instagram-grid"></div>
+          <p style="text-align:center;margin-top:16px;">
+            <a href="https://www.instagram.com/pizzakidtaq/" target="_blank" rel="noopener" class="btn btn-secondary">Seguir no Instagram</a>
+          </p>
+        </div>
+        <style>
+          .instagram-feed .instagram-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:24px; }
+          .instagram-feed .instagram-grid a { display:block; aspect-ratio:1/1; overflow:hidden; border-radius:10px; background:#1a1a1a; }
+          .instagram-feed .instagram-grid img { width:100%; height:100%; object-fit:cover; transition:transform .3s; display:block; }
+          .instagram-feed .instagram-grid a:hover img { transform:scale(1.06); }
+          @media(max-width:640px){ .instagram-feed .instagram-grid { grid-template-columns:repeat(2,1fr); } }
+        </style>
+      </section>
+
       <!-- CONTATO & MAPA -->
       <section class="contact section" id="contato">
         <div class="container">

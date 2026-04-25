@@ -15,7 +15,8 @@
   var CACHE_KEYS = {
     cardapio: 'pk_menu_cache_v1',
     businessInfo: 'pk_business_cache_v1',
-    promocoes: 'pk_promos_cache_v1'
+    promocoes: 'pk_promos_cache_v1',
+    instagram: 'pk_instagram_cache_v1'
   };
   function cacheGet(key, ttl) {
     try {
@@ -118,5 +119,23 @@
     })
     .catch(function (err) {
       console.warn('[firestore] Promocoes fallback local:', err.message);
+    });
+
+  // ── Instagram (cache → render → revalidate) ──
+  var cachedInsta = cacheGet(CACHE_KEYS.instagram, TTL_HOUR);
+  if (cachedInsta && Array.isArray(cachedInsta) && typeof window.renderInstagramGrid === 'function') {
+    window.renderInstagramGrid(cachedInsta);
+  }
+  fetchFirestore('instagram')
+    .then(function (data) {
+      if (Array.isArray(data) && data.length) {
+        cacheSet(CACHE_KEYS.instagram, data);
+        if (typeof window.renderInstagramGrid === 'function') {
+          window.renderInstagramGrid(data);
+        }
+      }
+    })
+    .catch(function (err) {
+      console.warn('[firestore] Instagram fallback:', err.message);
     });
 })();
