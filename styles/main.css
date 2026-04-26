@@ -236,6 +236,18 @@ p { color: var(--text-gray); font-size: 1.1rem; }
 .carousel-dots button { width: 10px; height: 10px; border-radius: 50%; border: none; background: rgba(255,255,255,0.55); cursor: pointer; padding: 0; transition: background 0.2s, transform 0.2s; }
 .carousel-dots button.active { background: #fff; transform: scale(1.25); }
 
+/* AÇÕES SOLIDÁRIAS */
+.solidarity { background: var(--bg-surface); }
+.solidarity-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; margin-top: 30px; }
+.solidarity-carousel { background: #1a1a1a; }
+.solidarity-carousel .carousel-slide { height: 480px; object-fit: contain; background: #1a1a1a; }
+.solidarity-info { display: flex; flex-direction: column; gap: 20px; }
+.solidarity-features { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.solidarity-features li { display: flex; align-items: center; gap: 14px; font-size: 1.05rem; color: var(--text-dark); background: #fff; padding: 14px 18px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm, 0 2px 6px rgba(0,0,0,0.06)); border-left: 4px solid var(--red, #E62525); }
+.solidarity-features li span { font-size: 1.4rem; }
+.solidarity-cta-text { color: var(--text-dark); font-size: 1rem; font-weight: 600; margin: 0; }
+.solidarity-info .btn { align-self: flex-start; }
+
 /* RODÍZIO */
 .rodizio-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; }
 .rodizio-carousel .carousel-slide { height: 460px; }
@@ -507,6 +519,8 @@ input:focus-visible, textarea:focus-visible {
   .about-images { height: 400px; }
   .rodizio-grid { grid-template-columns: 1fr; gap: 30px; }
   .rodizio-info .btn { align-self: center; }
+  .solidarity-grid { grid-template-columns: 1fr; gap: 30px; }
+  .solidarity-info .btn { align-self: center; }
   .contact-box { flex-direction: column; }
   .contact-info, .contact-map { width: 100%; }
   .contact-map { height: 300px; }
@@ -548,6 +562,7 @@ input:focus-visible, textarea:focus-visible {
   .kids-image img { height: 220px; }
   .kids-image .carousel-slide { height: 240px; }
   .rodizio-carousel .carousel-slide { height: 300px; }
+  .solidarity-carousel .carousel-slide { height: 320px; object-fit: contain; }
   .carousel-slide { height: 300px; }
   .carousel-btn { width: 38px; height: 38px; font-size: 1.4rem; }
   .carousel-prev { left: 8px; }
