@@ -1119,6 +1119,22 @@
     }
   }
 
+  // --- PROMO DO DIA: imagem em assets/promocoes/YYYY-MM-DD.webp ---
+  function initPromoDayImage() {
+    var wrap = document.getElementById('promoDayImage');
+    var img = document.getElementById('promoDayImg');
+    if (!wrap || !img) return;
+
+    var d = new Date();
+    var iso = d.getFullYear() + '-' +
+      String(d.getMonth() + 1).padStart(2, '0') + '-' +
+      String(d.getDate()).padStart(2, '0');
+
+    img.onload = function() { wrap.style.display = 'block'; };
+    img.onerror = function() { wrap.style.display = 'none'; };
+    img.src = 'assets/promocoes/' + iso + '.webp';
+  }
+
   // --- FEATURES: renderiza siteData.features no bloco "A Pizzaria" ---
   function renderFeatures() {
     var data = (window.siteData && window.siteData.features) || [];
@@ -1339,6 +1355,7 @@
 
   // Promo cards: habilitar/desabilitar botão Pedir conforme o dia
   initPromoCards();
+  initPromoDayImage();
 
   // Renderizar features da pizzaria
   renderFeatures();

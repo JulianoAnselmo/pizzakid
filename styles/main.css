@@ -241,6 +241,9 @@ p { color: var(--text-gray); font-size: 1.1rem; }
 .combos-header { text-align: center; margin-bottom: 28px; }
 .combos-header h3 { font-family: var(--font-display); font-size: 2.2rem; color: var(--text-dark); margin: 6px 0 8px; }
 .combos-header p { color: var(--text-muted, #666); font-size: 1rem; }
+.promo-day-image { margin: 0 auto 32px; max-width: 720px; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
+.promo-day-image img { width: 100%; height: auto; display: block; }
+
 .combos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .combo-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
 .combo-card .combo-image { width: 100%; aspect-ratio: 4 / 3; overflow: hidden; }
